@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Club Latinbien - Beneficios, Alianzas y Comercios Afiliados</title>
+<meta name="description" content="Club Latinbien: beneficios exclusivos, comercios afiliados, líneas de crédito y alianzas. Descuentos en restaurantes, estacionamientos, gimnasios y más.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" type="image/png">
+<style>
+/* ===== RESET ===== */
+:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-light:#3D6194;--primary-ultra:#e8edf5;--accent:#F98B10;--accent-light:#fff3e0;--accent-dark:#e07d00;--gold:#D4A017;--silver:#8E9EAB;--bronze:#CD7F32;--platinum:#3D6194;--success:#10b981;--danger:#ef4444;--dark:#1a1a2e;--g-100:#f8f9fa;--g-200:#e9ecef;--g-300:#dee2e6;--g-400:#ced4da;--g-500:#adb5bd;--g-600:#6c757d;--g-700:#495057;--white:#fff;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--shadow-xl:0 20px 60px rgba(0,0,0,0.15);--r:12px;--r-lg:20px;--r-xl:28px;--t:all 0.3s cubic-bezier(0.4,0,0.2,1)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--dark);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0;overflow:hidden}
+.sec-head{text-align:center;margin-bottom:48px}
+.sec-head .sub{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:12px}
+.sec-head h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;color:var(--primary);margin-bottom:12px;line-height:1.2}
+.sec-head h2 .accent-c{color:var(--accent)}
+.sec-head p{font-size:15px;color:var(--g-600);max-width:640px;margin:0 auto;line-height:1.7}
+.bg-gray{background:var(--g-100)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.3s ease-in-out;cursor:pointer;border:none;font-family:inherit}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 32px rgba(249,139,16,0.3)}
+.btn-outline-l{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.3)}
+.btn-outline-l:hover{border-color:#fff;background:rgba(255,255,255,0.1);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+.btn-outline:hover{background:var(--primary);color:#fff;transform:translateY(-2px)}
+.btn-secondary{background:var(--primary);color:#fff}
+.btn-secondary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 8px 32px rgba(33,60,131,0.3)}
+.btn-sm{padding:10px 18px;font-size:13px;border-radius:8px}
+.btn-block{width:100%;justify-content:center}
+.btn-white{background:#fff;color:var(--accent)}
+.btn-white:hover{background:var(--g-100);transform:translateY(-2px)}
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.wsp{position:fixed;bottom:24px;right:24px;z-index:999;width:52px;height:52px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,0.4);transition:all 0.3s ease;font-size:26px}
+.wsp:hover{transform:scale(1.1);box-shadow:0 8px 24px rgba(37,211,102,0.5)}
+
+/* Navbar */
+.navbar{position:sticky;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--g-200);transition:var(--t)}
+.navbar.scrolled{box-shadow:var(--shadow)}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;height:68px}
+.navbar .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.navbar .logo img{height:38px;width:auto}
+.navbar .logo span{font-size:20px;font-weight:800;color:var(--primary);letter-spacing:-0.5px}
+.navbar .logo span .accent-c{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:20px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--g-700);font-size:13px;font-weight:500;transition:var(--t);position:relative;white-space:nowrap}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--accent);transition:var(--t)}
+.nav-links a:hover{color:var(--primary)}.nav-links a:hover::after{width:100%}
+.nav-links .nav-cta{background:var(--accent);color:#fff!important;padding:9px 20px;border-radius:8px;font-weight:600}
+.nav-links .nav-cta:hover{background:var(--accent-dark);transform:translateY(-1px)}.nav-links .nav-cta::after{display:none}
+.nav-links .nav-login{color:var(--primary)!important;font-weight:600;border:2px solid var(--primary);padding:7px 16px;border-radius:8px}
+.nav-links .nav-login:hover{background:var(--primary);color:#fff!important}.nav-links .nav-login::after{display:none}
+.nav-links .nav-membership{background:var(--accent);color:#fff!important;padding:9px 20px;border-radius:8px;font-weight:600}
+.nav-links .nav-membership:hover{background:var(--accent-dark);transform:translateY(-1px)}.nav-links .nav-membership::after{display:none}
+.nav-links .nav-admin{color:var(--g-500)!important;font-size:12px;padding:4px 12px;border:1px solid var(--g-300);border-radius:6px;font-weight:500}
+.nav-links .nav-admin:hover{border-color:var(--primary);color:var(--primary)!important}.nav-links .nav-admin::after{display:none}
+.menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.menu-toggle span{display:block;width:24px;height:2px;background:var(--dark);border-radius:2px;transition:var(--t)}
+.menu-toggle.active span:nth-child(1){transform:rotate(45deg)translate(5px,5px)}
+.menu-toggle.active span:nth-child(2){opacity:0}
+.menu-toggle.active span:nth-child(3){transform:rotate(-45deg)translate(5px,-5px)}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 50%,#0f2250 100%);padding:80px 0 60px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-30%;right:-10%;width:50%;height:200%;background:radial-gradient(ellipse,rgba(249,139,16,0.1) 0%,transparent 70%);pointer-events:none}
+.hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hero-c h1{font-size:clamp(32px,4.5vw,48px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px}
+.hero-c h1 .hero-accent{color:var(--accent)}
+.hero-c p{font-size:17px;color:rgba(255,255,255,0.75);line-height:1.7;margin-bottom:28px;max-width:480px}
+.hero-c .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,139,16,0.15);color:var(--accent);padding:6px 18px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:20px;border:1px solid rgba(249,139,16,0.2)}
+.hero-img{display:flex;justify-content:center;align-items:center}
+.hero-img img{max-width:100%;height:auto;filter:drop-shadow(0 20px 60px rgba(0,0,0,0.3));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.hero-stats{display:flex;gap:32px;margin-top:32px;flex-wrap:wrap}
+.hero-stats .s h3{font-size:24px;font-weight:700;color:var(--accent)}
+.hero-stats .s p{font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin:0}
+
+/* Marquee */
+.marquee-wrap{background:var(--g-100);border-top:3px solid var(--accent);border-bottom:3px solid var(--accent);overflow:hidden;padding:12px 0}
+.marquee{display:flex;gap:20px;animation:marquee 30s linear infinite;width:max-content}
+.marquee:hover{animation-play-state:paused}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.pill{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--g-200);border-radius:100px;padding:10px 22px;box-shadow:var(--shadow);white-space:nowrap;transition:var(--t)}
+.pill:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg);border-color:var(--accent)}
+.pill .pi{width:32px;height:32px;border-radius:50%;background:var(--primary-ultra);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.pill .pt{font-size:13px;font-weight:600;color:var(--dark)}
+.pill .pt span{color:var(--accent);font-weight:700}
+
+/* Commerce cards */
+.aff-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:24px}
+.af-card{background:#fff;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--g-200);transition:var(--t)}
+.af-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.af-banner{height:100px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.af-banner .afi{font-size:40px;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.15))}
+.af-discount{position:absolute;top:12px;right:12px;background:var(--accent);color:#fff;padding:4px 12px;border-radius:100px;font-size:11px;font-weight:700}
+.af-cat{position:absolute;bottom:10px;left:16px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.8);background:rgba(0,0,0,0.2);padding:2px 10px;border-radius:100px}
+.af-body{padding:20px}.af-body h4{font-size:16px;font-weight:700;color:var(--primary);margin-bottom:4px}
+.af-body .aft{font-size:12px;color:var(--g-500);margin-bottom:10px}
+.af-body .afb{display:flex;flex-direction:column;gap:5px}
+.af-body .afb span{font-size:12px;color:var(--g-600);display:flex;align-items:center;gap:6px}
+.af-body .afb span::before{content:'✓';color:var(--success);font-weight:700}
+.af-body .afc{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;color:var(--accent);text-decoration:none;transition:var(--t)}
+.af-body .afc:hover{color:var(--accent-dark);gap:8px}
+.af-rest .af-banner{background:linear-gradient(135deg,#c0392b,#e74c3c)}.af-parking .af-banner{background:linear-gradient(135deg,#2c3e50,#4a6fa5)}.af-gym .af-banner{background:linear-gradient(135deg,#1a5276,#5dade2)}.af-tech .af-banner{background:linear-gradient(135deg,#1a1a2e,#4a4a6a)}.af-store .af-banner{background:linear-gradient(135deg,#6c3483,#af7ac5)}.af-health .af-banner{background:linear-gradient(135deg,#1e8449,#52d689)}.af-education .af-banner{background:linear-gradient(135deg,#996515,#D4A017)}.af-hotel .af-banner{background:linear-gradient(135deg,#8B4513,#CD7F32)}.af-auto .af-banner{background:linear-gradient(135deg,#0f2250,#3D6194)}
+
+/* Benefits grid */
+.bg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+.bc{background:#fff;border-radius:var(--r-lg);padding:32px 24px;border:1px solid var(--g-200);transition:var(--t);text-align:center;position:relative;overflow:hidden;cursor:default}
+.bc::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--primary),var(--accent));opacity:0;transition:var(--t)}
+.bc:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}.bc:hover::before{opacity:1}
+.bc .icn{width:60px;height:60px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:26px;background:var(--primary-ultra);color:var(--primary);transition:var(--t)}
+.bc:hover .icn{background:var(--accent-light);color:var(--accent);transform:scale(1.1)rotate(-5deg)}
+.bc h3{font-size:17px;font-weight:700;color:var(--primary);margin-bottom:8px}
+.bc p{font-size:13px;color:var(--g-600);line-height:1.6}
+.bc .tag{display:inline-block;margin-top:14px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--accent);background:var(--accent-light);padding:4px 14px;border-radius:100px}
+
+/* Credit cards */
+.cc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;margin-top:20px}
+.cc{background:#fff;border-radius:18px;overflow:hidden;transition:var(--t);position:relative;box-shadow:0 8px 32px rgba(0,0,0,0.08);perspective:1000px}
+.cc:hover{transform:translateY(-6px) rotateY(1deg);box-shadow:var(--shadow-xl)}
+.cc.featured{transform:scale(1.04);box-shadow:0 12px 48px rgba(249,139,16,0.18)}
+.cc.featured:hover{transform:scale(1.04) translateY(-6px) rotateY(1deg)}
+.cc-bg{height:170px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 22px;overflow:hidden}
+.cc-bg .cp{position:absolute;inset:0;opacity:0.1;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(255,255,255,0.05)20px,rgba(255,255,255,0.05)40px)}
+.cc-bg .chip{width:36px;height:28px;background:linear-gradient(135deg,rgba(255,255,255,0.4),rgba(255,255,255,0.15));border-radius:4px;margin-bottom:10px;border:1px solid rgba(255,255,255,0.2)}
+.cc-bg .cl{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:rgba(255,255,255,0.7);margin-bottom:2px}
+.cc-bg .ct{font-size:20px;font-weight:800;color:#fff}
+.cc-bg .ci{font-size:12px;color:rgba(255,255,255,0.85);margin-top:2px}
+.cc-bg .ctb{position:absolute;top:16px;right:20px;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.2);padding:3px 10px;border-radius:4px}
+.cc-body{padding:22px}.cc-body .cf{list-style:none;margin-bottom:16px}
+.cc-body .cf li{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:13px;color:var(--g-700);border-bottom:1px solid var(--g-100)}
+.cc-body .cf li:last-child{border-bottom:none}.cc-body .cf li .ck{color:var(--success);font-weight:700;flex-shrink:0}.cc-body .cf li .cr{color:var(--danger);font-weight:700;flex-shrink:0}
+.cc-footer{padding:0 22px 22px}.cc-footer .btn{width:100%;justify-content:center}
+.cc.featured .popular{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:4px 16px;border-radius:100px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;z-index:10;white-space:nowrap}
+.c-bronze .cc-bg{background:linear-gradient(135deg,#8B4513,#CD7F32,#A0522D)}
+.c-silver .cc-bg{background:linear-gradient(135deg,#4a5568,#8E9EAB,#6c757d)}
+.c-gold .cc-bg{background:linear-gradient(135deg,#996515,#D4A017,#B8860B)}
+.c-platinum .cc-bg{background:linear-gradient(135deg,#1a2f66,#213C83,#3D6194)}
+
+/* Tabs */
+.tabs-wrap{background:#fff;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow)}
+.tabs-header{display:flex;gap:4px;background:var(--g-100);padding:6px;overflow-x:auto}
+.tab-btn{padding:10px 24px;border:none;background:transparent;border-radius:10px;font-size:13px;font-weight:600;color:var(--g-600);cursor:pointer;transition:var(--t);white-space:nowrap;font-family:inherit}
+.tab-btn:hover{color:var(--primary);background:rgba(33,60,131,0.05)}
+.tab-btn.active{background:#fff;color:var(--primary);box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.tab-content{display:none;padding:36px}
+.tab-content.active{display:block;animation:fadeIn 0.3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.tab-features{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tab-feature{display:flex;gap:12px;align-items:flex-start;padding:12px;background:var(--g-100);border-radius:var(--r)}
+.tab-feature .tfi{width:36px;height:36px;border-radius:10px;background:var(--primary-ultra);color:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px}
+.tab-feature div h4{font-size:14px;font-weight:600;color:var(--primary);margin-bottom:2px}
+.tab-feature div p{font-size:12px;color:var(--g-500)}
+
+/* Status */
+.status-box{background:#fff;border-radius:var(--r-xl);padding:48px;box-shadow:var(--shadow);margin-top:40px}
+.status-box .sh{text-align:center;margin-bottom:32px}
+.status-box .sh h3{font-size:22px;font-weight:700;color:var(--primary);margin-bottom:6px}
+.status-box .sh p{font-size:14px;color:var(--g-600)}
+.ladder{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:0 10px;position:relative}
+.ladder::before{content:'';position:absolute;bottom:32px;left:8%;right:8%;height:4px;background:var(--g-200);border-radius:2px;z-index:0}
+.ls{flex:1;text-align:center;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center}
+.ls .dot{width:18px;height:18px;border-radius:50%;background:var(--g-300);border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);margin-bottom:10px;transition:var(--t)}
+.ls.active .dot{background:var(--accent);box-shadow:0 0 0 4px rgba(249,139,16,0.2);animation:pulse-dot 2s infinite}
+@keyframes pulse-dot{0%,100%{box-shadow:0 0 0 4px rgba(249,139,16,0.2)}50%{box-shadow:0 0 0 8px rgba(249,139,16,0.1)}}
+.ls.done .dot{background:var(--success)}
+.ls .lbl{font-size:11px;font-weight:600;color:var(--g-500);text-transform:uppercase;letter-spacing:0.5px}
+.ls.active .lbl{color:var(--accent);font-weight:700}.ls.done .lbl{color:var(--success)}
+.ls .ld{font-size:10px;color:var(--g-400);margin-top:2px}.ls .li{font-size:20px;margin-bottom:6px}
+
+/* Alliances */
+.alliance-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-bottom:48px}
+.al-logo{background:#fff;border:1px solid var(--g-200);border-radius:var(--r);padding:18px 20px;display:flex;align-items:center;justify-content:center;min-height:70px;transition:var(--t);cursor:default;flex:0 1 auto;min-width:120px}
+.al-logo:hover{box-shadow:var(--shadow);border-color:var(--accent);transform:translateY(-2px)}
+.al-logo span{font-size:12px;font-weight:600;color:var(--g-700);text-align:center;line-height:1.3}
+.al-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.al-card{background:var(--g-100);border-radius:var(--r-lg);padding:28px 24px;text-align:center;transition:var(--t);border:1px solid transparent}
+.al-card:hover{background:#fff;border-color:var(--g-200);box-shadow:var(--shadow);transform:translateY(-3px)}
+.al-card .ai{font-size:30px;margin-bottom:10px}
+.al-card h4{font-size:15px;font-weight:700;color:var(--primary);margin-bottom:6px}
+.al-card p{font-size:13px;color:var(--g-600);line-height:1.6}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-top:20px}
+.st{text-align:center;position:relative;padding:24px 16px}
+.st:not(:last-child)::after{content:'→';position:absolute;top:50%;right:-20px;transform:translateY(-50%);font-size:24px;color:var(--accent);font-weight:300}
+.st .num{width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;margin:0 auto 12px;box-shadow:0 4px 16px rgba(249,139,16,0.25)}
+.st h4{font-size:15px;font-weight:700;color:var(--primary);margin-bottom:6px}
+.st p{font-size:13px;color:var(--g-600);line-height:1.6}
+
+/* Testimonials */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.tc{background:#fff;border-radius:var(--r-lg);padding:28px;border:1px solid var(--g-200);transition:var(--t)}
+.tc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.tc .stars{color:var(--accent);font-size:14px;margin-bottom:10px}
+.tc blockquote{font-size:14px;color:var(--g-700);line-height:1.7;margin-bottom:16px;font-style:italic}
+.tc .author{display:flex;align-items:center;gap:10px}
+.tc .author .av{width:40px;height:40px;border-radius:50%;background:var(--primary-ultra);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700}
+.tc .author .info h4{font-size:13px;font-weight:600;color:var(--dark)}
+.tc .author .info span{font-size:11px;color:var(--g-500)}
+.tc .bt{display:inline-block;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;padding:2px 10px;border-radius:100px;margin-bottom:10px}
+.bt-basico{background:#f5e6d3;color:#8B4513}.bt-medio{background:#e9ecef;color:#4a5568}.bt-vip{background:#e8edf5;color:#213C83}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--accent),var(--accent-dark));padding:56px 0;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:'';position:absolute;top:-50%;left:-20%;width:60%;height:200%;background:radial-gradient(ellipse,rgba(255,255,255,0.1),transparent 70%);pointer-events:none}
+.cta h2{font-size:clamp(26px,3.5vw,38px);font-weight:800;color:#fff;margin-bottom:12px}
+.cta p{font-size:16px;color:rgba(255,255,255,0.85);max-width:560px;margin:0 auto 24px}
+
+/* FAQ */
+.faq{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq-i{border:1px solid var(--g-200);border-radius:var(--r);overflow:hidden;transition:var(--t)}
+.faq-i:hover{border-color:var(--g-300)}
+.faq-q{width:100%;padding:16px 20px;background:#fff;display:flex;justify-content:space-between;align-items:center;border:none;cursor:pointer;font-size:14px;font-weight:600;color:var(--dark);font-family:inherit;transition:var(--t);text-align:left}
+.faq-q:hover{background:var(--g-100)}
+.faq-q .fi{font-size:18px;color:var(--accent);transition:var(--t);flex-shrink:0}
+.faq-i.open .faq-q .fi{transform:rotate(45deg)}
+.faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:all 0.3s ease}
+.faq-i.open .faq-a{padding:0 20px 16px;max-height:300px}
+.faq-a p{font-size:13px;color:var(--g-600);line-height:1.7}
+
+/* Auth sections (login prompt + user greeting) */
+.auth-section{max-width:1200px;margin:0 auto;padding:0 24px;display:none}
+.auth-section.visible{display:block}
+.login-prompt{background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;text-align:center;padding:48px 24px;border-radius:20px;margin:32px 0}
+.login-prompt h2{font-size:clamp(22px,3vw,32px);font-weight:800;margin-bottom:12px}
+.login-prompt p{font-size:15px;opacity:.9;margin-bottom:20px;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-login{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#fff;color:var(--accent-dark);border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;transition:all .3s ease}
+.btn-login:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.user-greeting{background:var(--primary-ultra);border-radius:20px;padding:24px 32px;margin-bottom:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.user-greeting .gt h3{font-size:18px;font-weight:700;color:var(--primary);margin-bottom:4px}
+.user-greeting .gt p{font-size:13px;color:var(--g-600)}
+.user-greeting .gs{display:flex;gap:24px}
+.user-greeting .gs .s{text-align:center}
+.user-greeting .gs .s .num{font-size:22px;font-weight:800;color:var(--accent)}
+.user-greeting .gs .s .lbl{font-size:11px;color:var(--g-500);text-transform:uppercase;letter-spacing:.5px}
+.user-greeting .gs .level-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 14px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.user-greeting .gs .level-basic{background:var(--accent-light);color:var(--bronze)}
+.user-greeting .gs .level-medio{background:#e9ecef;color:#4a5568}
+.user-greeting .gs .level-vip{background:var(--primary-ultra);color:var(--primary)}
+
+/* Tier Dashboard */
+.tier-dashboard{background:#fff;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:40px;border:1px solid var(--g-200)}
+.tier-dashboard.loading{opacity:.6;pointer-events:none}
+.tier-dashboard .td-loading{text-align:center;padding:48px;color:var(--g-500);font-size:14px}
+.tier-dashboard .td-loading .spinner{width:40px;height:40px;border:3px solid var(--g-200);border-top-color:var(--accent);border-radius:50%;animation:td-spin .8s linear infinite;margin:0 auto 16px}
+@keyframes td-spin{to{transform:rotate(360deg)}}
+.td-head{padding:28px 32px;border-bottom:1px solid var(--g-200);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.td-head h3{font-size:20px;font-weight:800;color:var(--primary)}
+.td-head .td-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.td-badge-empty{background:var(--g-100);color:var(--g-500)}
+.td-badge-basica{background:var(--accent-light);color:var(--bronze)}
+.td-badge-media{background:#e9ecef;color:#4a5568}
+.td-badge-vip{background:var(--primary-ultra);color:var(--primary)}
+.td-badge-suspendido{background:#fff0f0;color:var(--danger)}
+.td-body{padding:32px}
+.td-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;margin-bottom:32px}
+.td-metric{background:var(--g-100);border-radius:var(--r);padding:20px;text-align:center;transition:var(--t)}
+.td-metric:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.td-metric .tm-icon{font-size:24px;margin-bottom:8px}
+.td-metric .tm-value{font-size:24px;font-weight:800;color:var(--primary);font-variant-numeric:tabular-nums}
+.td-metric .tm-label{font-size:12px;color:var(--g-500);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
+.td-metric .tm-sub{font-size:11px;color:var(--g-400);margin-top:2px}
+.td-metric.highlight .tm-value{color:var(--accent)}
+.td-divider{height:1px;background:var(--g-200);margin:24px 0}
+.td-tiers-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:16px}
+.td-tier-box{border:2px solid var(--g-200);border-radius:var(--r-lg);padding:20px;text-align:center;transition:var(--t);position:relative;overflow:hidden}
+.td-tier-box.active{border-color:var(--accent);box-shadow:0 0 0 4px rgba(249,139,16,.1)}
+.td-tier-box.reached{opacity:1}
+.td-tier-box.unreached{opacity:.5}
+.td-tier-box .tb-icon{font-size:32px;margin-bottom:8px}
+.td-tier-box .tb-name{font-size:16px;font-weight:700;color:var(--primary);margin-bottom:4px}
+.td-tier-box .tb-req{font-size:11px;color:var(--g-500);line-height:1.5}
+.td-tier-box .tb-check{position:absolute;top:8px;right:8px;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px}
+.td-tier-box .tb-check.checked{background:var(--success);color:#fff}
+.td-tier-box .tb-check.unchecked{background:var(--g-200);color:var(--g-400)}
+.td-tier-box.active .tb-name{color:var(--accent)}
+.td-status-bar{margin-top:24px;padding:16px;background:var(--g-100);border-radius:var(--r);display:flex;align-items:center;gap:12px;font-size:13px;color:var(--g-600)}
+.td-status-bar .sb-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.sb-green{background:var(--success)}.sb-red{background:var(--danger)}.sb-yellow{background:var(--accent)}
+
+/* Newsletter */
+.news{background:var(--g-100);padding:40px 0;text-align:center}
+.news-box{max-width:520px;margin:0 auto}
+.news-box h3{font-size:18px;font-weight:700;color:var(--primary);margin-bottom:6px}
+.news-box p{font-size:13px;color:var(--g-600);margin-bottom:20px}
+.news-form{display:flex;gap:8px;max-width:440px;margin:0 auto}
+.news-form input{flex:1;padding:10px 16px;border:1px solid var(--g-300);border-radius:8px;font-size:13px;font-family:inherit}
+.news-form input:focus{outline:none;border-color:var(--accent)}
+.news-form button{padding:10px 24px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:var(--t);font-family:inherit}
+.news-form button:hover{background:var(--primary-dark)}
+
+/* Contact & Footer */
+.contact-section{background:var(--primary);color:#fff;padding:60px 0}
+.contact-section .sec-head h2{color:#fff}.contact-section .sec-head p{color:rgba(255,255,255,0.7)}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.contact-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border-radius:var(--r);padding:24px;text-align:center;border:1px solid rgba(255,255,255,0.1);transition:var(--t)}
+.contact-card:hover{background:rgba(255,255,255,0.12);transform:translateY(-2px)}
+.contact-card .ic{font-size:24px;margin-bottom:10px}
+.contact-card h3{font-size:14px;font-weight:600;margin-bottom:4px}
+.contact-card p,.contact-card a{font-size:13px;color:rgba(255,255,255,0.8);text-decoration:none;line-height:1.6}
+.contact-card a:hover{color:var(--accent)}
+
+.footer{background:var(--dark);color:rgba(255,255,255,0.6);padding:48px 0 24px}
+.footer .container{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
+.footer h4{color:#fff;font-size:14px;font-weight:600;margin-bottom:14px}
+.footer p,.footer a{font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;line-height:2;display:block}
+.footer a:hover{color:var(--accent)}.footer .fl{margin-bottom:12px}.footer .fl img{height:36px;width:auto}
+.footer .social{display:flex;gap:10px;margin-top:12px}
+.footer .social a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-size:14px;transition:var(--t);color:rgba(255,255,255,0.5);text-decoration:none}
+.footer .social a:hover{background:var(--accent);color:#fff!important}
+.fb{border-top:1px solid rgba(255,255,255,0.06);margin-top:36px;padding-top:20px;text-align:center;font-size:12px}
+
+/* Responsive */
+@media(max-width:992px){
+  .hero .container{grid-template-columns:1fr;text-align:center}
+  .hero-c p{margin:0 auto 28px}.hero-stats{justify-content:center}.hero-img{display:none}
+  .cc.featured{transform:none}.cc.featured:hover{transform:translateY(-6px)rotateY(1deg)}
+  .ladder{flex-wrap:wrap;justify-content:center;gap:20px}.ladder::before{display:none}
+  .st:not(:last-child)::after{display:none}
+}
+@media(max-width:768px){
+  .menu-toggle{display:flex}
+  .nav-links{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:24px;gap:14px;border-bottom:1px solid var(--g-200);transform:translateY(-100%);opacity:0;pointer-events:none;transition:var(--t)}
+  .nav-links.open{transform:translateY(0);opacity:1;pointer-events:all}
+  .footer .container{grid-template-columns:1fr 1fr}.status-box{padding:24px}.news-form{flex-direction:column}
+  .tab-features{grid-template-columns:1fr}.tab-content{padding:24px}
+}
+@media(max-width:480px){
+  .footer .container{grid-template-columns:1fr}.cc-grid{grid-template-columns:1fr}.bg-grid,.test-grid,.aff-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR (generated by JS) ===== -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="https://latinbien.com" class="logo" id="logoLink">
+      <img src="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" alt="LATINBIEN" id="logoImg"
+           onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 50%22><text y=%2235%22 font-size=%2220%22 font-weight=%22bold%22 fill=%22%23213C83%22>LATINBIEN</text></svg>'">
+      <span>Latin<span class="accent-c" id="brandAccent">Bien</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks"></ul>
+  </div>
+</nav>
+
+<!-- ===== CONTENT RENDERED BY JS ===== -->
+<main id="app"></main>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="#" class="wsp" id="wspFloat" target="_blank" aria-label="WhatsApp">&#128172;</a>
+
+<script>
+/* ============================================================
+   ║  C O N F I G U R A C I Ó N   C E N T R A L I Z A D A    ║
+   ║  Editá solo esto para cambiar toda la página             ║
+   ============================================================ */
+const CONFIG = {
+
+  // ── Brand ──
+  brand: {
+    name: 'LatinBien',
+    logo: 'https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15',
+    url: 'https://latinbien.com',
+    phone: '+58 (0414) 7348785',
+    phoneRaw: '+584147348785',
+    email: 'info@latinbien.com',
+    address: 'Av. Las Américas, CC Rodeo Plaza, Nivel 1, Mérida - Venezuela',
+    whatsappMsg: 'Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Club%20Latinbien',
+    social: {
+      facebook: 'https://www.facebook.com/latinbien',
+      instagram: 'https://www.instagram.com/latinbien/',
+    }
+  },
+
+  // ── Navbar menu items ──
+  // type: 'link' | 'cta' | 'login' | 'membership' | 'admin'
+  menu: [
+    { label: 'Inicio', href: 'https://latinbien.com', type: 'link' },
+    { label: 'Club Membresía', href: '#', type: 'link', active: true },
+    { label: 'Mi Membresía', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/mi-membresia', type: 'membership' },
+    { label: 'Comercios Afiliados', href: '#comercios', type: 'link' },
+    { label: 'Niveles', href: '#tarjetas', type: 'link' },
+    { label: 'Beneficios', href: '#beneficios', type: 'link' },
+    { label: 'Admin', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/admin-membresia', type: 'admin' },
+    { label: 'Registrarse', href: 'https://latinbien.com/web/signup', type: 'login' },
+    { label: 'Mi Cuenta', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/web/login', type: 'login' },
+  ],
+
+  // ── Hero ──
+  hero: {
+    badge: 'Club de Beneficios Latinbien',
+    title: 'El <span class="hero-accent">Club Latinbien</span><br>te abre las puertas<br>a un mundo de ventajas',
+    description: 'Accede a líneas de crédito preferenciales, descuentos exclusivos en comercios afiliados, eventos especiales y un programa de recompensas diseñado para ti.',
+    cta1: { label: 'Ver comercios afiliados', href: '#comercios' },
+    cta2: { label: 'Ver niveles', href: '#tarjetas' },
+    stats: [
+      { value: '7,000+', label: 'Clientes activos' },
+      { value: '15+', label: 'Comercios afiliados' },
+      { value: '12+', label: 'Empresas aliadas' },
+      { value: '3', label: 'Niveles membresía' },
+    ],
+    image: 'https://latinbien.com/web/image/618225-6e6e579c/11.png',
+  },
+
+  // ── Marquee pills (beneficios volantes) ──
+  marquee: [
+    { icon: '💰', text: 'Crédito desde <span>20% inicial</span>' },
+    { icon: '💳', text: 'Hasta <span>20 cuotas</span> para pagar' },
+    { icon: '🍽️', text: '<span>15% OFF</span> en Restaurante La Nota' },
+    { icon: '🅿️', text: '<span>20% OFF</span> en Estacionamiento Rodeo Plaza' },
+    { icon: '🏋️', text: '<span>30% OFF</span> en Gimnasio Bi Fit' },
+    { icon: '📦', text: 'Envío <span>gratis prioritario</span>' },
+    { icon: '🎉', text: 'Eventos <span>VIP exclusivos</span>' },
+    { icon: '🏆', text: 'Programa de <span>puntos canjeables</span>' },
+  ],
+
+  // ── Commerce affiliates ──
+  // theme: rest | parking | gym | tech | store | health | education | hotel | auto
+  affiliates: [
+    { name: 'Restaurante La Nota', theme: 'rest', icon: '🍝', discount: '15% OFF', category: '🍽️ Gastronomía', location: 'Av. Las Américas, Mérida', benefits: ['Descuento del 15% en toda la carta', '2x1 en bebidas los jueves', 'Postre de cortesía en tu cumpleaños'], cta: 'Reclamar beneficio', msg: 'Quiero%20informaci%C3%B3n%20sobre%20el%20descuento%20en%20Restaurante%20La%20Nota' },
+    { name: 'Estacionamiento Rodeo Plaza', theme: 'parking', icon: '🅿️', discount: '20% OFF', category: '🅿️ Estacionamiento', location: 'CC Rodeo Plaza, Nivel Sótano', benefits: ['20% de descuento en tarifa regular', '1 hora gratis por cada 4 horas', 'Lavado incluido cada 5 usos'], cta: 'Reclamar beneficio', msg: 'Quiero%20informaci%C3%B3n%20sobre%20el%20descuento%20en%20Estacionamiento%20Rodeo%20Plaza' },
+    { name: 'Gimnasio Bi Fit', theme: 'gym', icon: '🏋️', discount: '30% OFF', category: '🏋️ Fitness', location: 'Av. Urdaneta, Mérida', benefits: ['30% de descuento en membresía mensual', 'Clase de prueba gratis', 'Evaluación física gratuita'], cta: 'Reclamar beneficio', msg: 'Quiero%20informaci%C3%B3n%20sobre%20el%20descuento%20en%20Gimnasio%20Bi%20Fit' },
+    { name: 'Tecnología Plus', theme: 'tech', icon: '💻', discount: '10% OFF', category: '💻 Tecnología', location: 'CC Las Américas, Local 5', benefits: ['10% de descuento en accesorios', '6 meses de garantía extendida', 'Instalación de software gratis'], cta: 'Reclamar beneficio', msg: 'Quiero%20informaci%C3%B3n%20sobre%20el%20descuento%20en%20Tecnolog%C3%ADa%20Plus' },
+    { name: 'Supermercado El Rodeo', theme: 'store', icon: '🛒', discount: '8% OFF', category: '🛒 Supermercado', location: 'Av. Las Américas, Mérida', benefits: ['8% de descuento en compras mayores a $50', 'Despacho a domicilio gratis', 'Acumula puntos Latinbien'], cta: 'Reclamar beneficio', msg: 'Quiero%20informaci%C3%B3n%20sobre%20el%20descuento%20en%20Supermercado%20El%20Rodeo' },
+    { name: 'Clínica Dental Care', theme: 'health', icon: '🦷', discount: '20% OFF', category: '🩺 Salud', location: 'Av. Urdaneta, Edif. Medical Center', benefits: ['20% en limpieza dental', '15% en tratamientos de ortodoncia', 'Consulta de valoración gratis'], cta: 'Reclamar beneficio', msg: 'Quiero%20informaci%C3%B3n%20sobre%20el%20descuento%20en%20Cl%C3%ADnica%20Dental%20Care' },
+  ],
+
+  // ── Benefits grid ──
+  benefits: [
+    { icon: '💰', title: 'Crédito Preferencial', desc: 'Líneas de crédito con tasas especiales, iniciales reducidas desde 20% y plazos de hasta 20 cuotas.', tag: 'Exclusivo del club' },
+    { icon: '🍽️', title: 'Descuentos en Comercios', desc: 'Beneficios exclusivos en restaurantes, estacionamientos, gimnasios y más comercios afiliados en Mérida.', tag: 'Hasta 30% OFF' },
+    { icon: '📦', title: 'Descuentos en Catálogo', desc: 'Precios especiales en productos de tecnología, hogar, línea blanca y más. Ahorra en cada compra.', tag: 'Hasta 30% OFF' },
+    { icon: '🚀', title: 'Entrega Prioritaria', desc: 'Recibe tus productos de forma preferencial con envío prioritario sin costo adicional en compras seleccionadas.', tag: 'Envío gratis' },
+    { icon: '🎉', title: 'Eventos Exclusivos', desc: 'Invitaciones a lanzamientos, ferias, talleres y eventos especiales solo para miembros del club.', tag: 'Acceso VIP' },
+    { icon: '🏆', title: 'Programa de Puntos', desc: 'Acumula puntos Latinbien con cada compra y canjéalos por productos, descuentos y beneficios adicionales.', tag: 'Acumula y canjea' },
+  ],
+
+  // ── Credit card tiers ──
+  // theme: bronze | silver | platinum
+  tiers: [
+    { theme: 'bronze', badge: 'Básico', title: 'Membresía Básica', level: 'Nivel 1', initial: '50%', featured: false, popular: '', features: ['Acceso a línea de crédito básica','Inicial desde 50%','Plazos de 6 a 20 cuotas','Atención al cliente estándar'], plus: [], minus: [], btn: { label: 'Activar membresía', href: 'https://latinbien.com/web/signup', type: 'outline' } },
+    { theme: 'silver', badge: 'Medio', title: 'Membresía Media', level: 'Nivel 2', initial: '30%', featured: true, popular: '⭐ Más popular', features: ['Crédito preferencial','Inicial desde 30%','Plazos de 6 a 20 cuotas','Descuentos en comercios afiliados','Envío prioritario gratuito','Soporte dedicado'], plus: [], minus: [], btn: { label: '⭐ Afiliarse ahora', href: 'https://latinbien.com/web/signup', type: 'primary' } },
+    { theme: 'platinum', badge: 'VIP', title: 'Membresía VIP', level: 'Nivel 3', initial: '20%', featured: false, popular: '', features: ['Crédito premium','Inicial desde 20%','Plazos de 6 a 20 cuotas','Descuentos en todos los comercios','Asesor dedicado 24/7','Invitación a eventos VIP','Puntos triples'], plus: [], minus: [], btn: { label: 'Ingresar al Club', href: 'https://latinbien.com/web/login', type: 'secondary' } },
+  ],
+
+  // ── Tab details for interactive comparison ──
+  tabs: [
+    { id: 'basico', label: '● Básico', stars: '🌟', title: 'Membresía Básica — Nivel 1', subtitle: 'El primer paso para construir tu historial en Latinbien', features: [
+      { icon: '💰', title: 'Línea de crédito', desc: 'Acceso a crédito básico desde 50% de inicial' },
+      { icon: '📅', title: 'Plazos flexibles', desc: 'Elige entre 6 y 20 cuotas para tus pagos' },
+      { icon: '📞', title: 'Atención estándar', desc: 'Soporte al cliente en horario regular' },
+      { icon: '📦', title: 'Catálogo completo', desc: 'Acceso a todos los productos de Latinbien' },
+    ]},
+    { id: 'medio', label: '● Medio', stars: '⭐⭐', title: 'Membresía Media — Nivel 2', subtitle: 'El equilibrio perfecto entre beneficios y ahorro', features: [
+      { icon: '💰', title: 'Crédito preferencial', desc: 'Inicial desde 30% con mejores condiciones' },
+      { icon: '🍽️', title: 'Descuentos en comercios', desc: 'Beneficios en restaurantes, gimnasios y más' },
+      { icon: '🚀', title: 'Envío prioritario', desc: 'Recibe tus productos sin costo adicional' },
+      { icon: '📞', title: 'Soporte dedicado', desc: 'Atención preferencial para miembros' },
+      { icon: '🏆', title: 'Puntos dobles', desc: 'Acumula el doble de puntos Latinbien' },
+    ]},
+    { id: 'vip', label: '⭐ VIP', stars: '💎💎💎', title: 'Membresía VIP — Nivel 3', subtitle: 'El máximo nivel. Beneficios exclusivos para nuestros mejores clientes', features: [
+      { icon: '💰', title: 'Crédito premium', desc: 'Inicial desde 20% con condiciones exclusivas' },
+      { icon: '🍽️', title: 'Descuentos en todos los comercios', desc: 'Hasta 30% en toda la red de afiliados' },
+      { icon: '🚀', title: 'Envío exprés ilimitado', desc: 'Sin costo, sin límite de compras' },
+      { icon: '📞', title: 'Asesor dedicado 24/7', desc: 'Atención personalizada las 24 horas' },
+      { icon: '🏆', title: 'Puntos triples', desc: 'Acumula el triple de puntos Latinbien' },
+      { icon: '🎉', title: 'Eventos VIP', desc: 'Invitación a eventos privados y lanzamientos' },
+    ]},
+  ],
+
+  // ── Client status visualization ──
+  status: {
+    title: '📈 Tu progreso en el Club',
+    subtitle: 'A medida que crece tu historial, tu nivel y beneficios aumentan.',
+    currentLevel: 'Nivel Medio — Membresía Media',
+    currentTier: 'Medio',
+    nextTier: 'Membresía VIP',
+    nextTierColor: 'var(--platinum)',
+    contractsDone: 3,
+    contractsNeeded: 5,
+    progressPercent: 60,
+    steps: [
+      { icon: '👤', label: 'Registrado', detail: 'Cuenta creada', status: 'done' },
+      { icon: '💰', label: '1er Contrato', detail: '✓ Membresía Básica', status: 'done' },
+      { icon: '📈', label: '3 Contratos', detail: '→ Membresía Media', status: 'active' },
+      { icon: '👑', label: '5 Contratos', detail: '→ Membresía VIP', status: 'pending' },
+    ],
+    remainingMsg: 'Te faltan <strong style="color:var(--primary);">2 contratos</strong> para alcanzar <strong style="color:var(--platinum);">Membresía VIP</strong> y acceder a descuentos en todos los comercios afiliados.',
+    nextGoal: '📅 Próxima meta: 2 contratos más para llegar a VIP',
+  },
+
+  // ── Alliances ──
+  alliances: {
+    title: 'Alianzas Estratégicas',
+    subtitle: 'Empresas que confían en <span class="accent-c">Latinbien</span>',
+    description: 'Trabajamos con instituciones y empresas líderes para ofrecerte beneficios exclusivos.',
+    logos: ['Tovarsat','Maxicar','Materiales Los Andes','Líneas Unificadas','Línea Los Chorros','Hostal Madrid','Farmabien','Colegio de Médicos','APULA','Arsugas','Andina de Pinturas','Colegio de Odontólogos'],
+    benefitsTitle: 'Ventajas de ser una <span class="accent-c">organización aliada</span>',
+    benefits: [
+      { icon: '📈', title: 'Ventaja Competitiva', desc: 'Atrae y retén talento con un beneficio que impacta el poder adquisitivo de tu equipo.' },
+      { icon: '❤️', title: 'Incremento del Bienestar', desc: 'Reduce la presión financiera de tu personal. Un equipo con bienestar es más productivo.' },
+      { icon: '💰', title: 'Implementación Cero Costo', desc: 'Nuestro modelo de alianza no representa ningún gasto para tu organización.' },
+      { icon: '📞', title: 'Condiciones Preferenciales', desc: 'Tus miembros acceden a iniciales reducidas, tasas especiales y atención prioritaria.' },
+    ],
+    cta1: { label: '💎 Quiero crear un convenio', href: 'https://latinbien.com/convenios' },
+    cta2: { label: 'Hablar con un asesor', href: 'https://wa.me/584147348785?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20convenios%20corporativos' },
+  },
+
+  // ── Steps ──
+  steps: [
+    { num: 1, title: 'Regístrate', desc: 'Crea tu cuenta en Latinbien completando tu perfil con tu información personal.' },
+    { num: 2, title: 'Activa tu membresía', desc: 'Selecciona el nivel de club que deseas. Actívalo sin costo.' },
+    { num: 3, title: 'Compra y ahorra', desc: 'Usa tu línea de crédito y disfruta descuentos en comercios afiliados.' },
+    { num: 4, title: 'Crece con nosotros', desc: 'Paga a tiempo, acumula puntos y asciende de nivel para más beneficios.' },
+  ],
+
+  // ── Testimonials ──
+  testimonials: [
+    { stars: 5, quote: '"La Membresía Media me da descuentos en el gimnasio y en el restaurante. El crédito preferencial me ha ayudado a equipar mi casa. ¡Excelente relación beneficio-costo!"', author: 'María Escalona', detail: 'Miembro desde 2024 · 5 contratos · Nivel Medio', badge: 'medio', initials: 'ME' },
+    { stars: 5, quote: '"El descuento en el Estacionamiento Rodeo Plaza me salva cada vez que voy al centro. Con la Membresía Básica empecé y ya voy por más. Excelente atención."', author: 'Dr. Gustavo Vilchez', detail: 'Miembro por convenio · Colegio de Médicos', badge: 'basico', initials: 'GV' },
+    { stars: 5, quote: '"La Membresía VIP me ha dado acceso a eventos exclusivos y descuentos en todos los comercios. La inicial del 20% me permitió comprar sin afectar mi presupuesto. 100% recomendado."', author: 'Dr. Félix Lima', detail: 'Miembro VIP · 18 contratos', badge: 'vip', initials: 'FL' },
+  ],
+
+  // ── CTA Banner ──
+  ctaBanner: {
+    title: '⭐ No esperes más, únete al Club Latinbien',
+    description: 'Miles de personas ya disfrutan de beneficios exclusivos en comercios afiliados. Obtén tu línea de crédito y empieza a ahorrar hoy.',
+    btn: { label: '👤 Ir a Mi Membresía', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/mi-membresia' },
+  },
+
+  // ── FAQ ──
+  faq: [
+    { q: '¿Cuánto cuesta ser miembro del Club Latinbien?', a: 'Ser miembro del Club Latinbien es completamente <strong>gratis</strong>. No hay cuotas de afiliación ni costos de mantenimiento. Solo necesitas tener una cuenta activa y cumplir con los requisitos de cada nivel.' },
+    { q: '¿Cómo accedo a los descuentos en comercios afiliados?', a: 'Solo debes presentar tu cédula o tu código de miembro en el comercio afiliado al momento de pagar. El descuento se aplica automáticamente. Los beneficios varían según tu nivel de membresía.' },
+    { q: '¿Puedo subir de nivel en el club?', a: 'A medida que construyes un historial de pagos puntuales y realizas más contratos, asciendes automáticamente de nivel. Cada nivel te da acceso a más descuentos en comercios, mejores tasas y atención más personalizada.' },
+    { q: '¿Cómo funcionan los puntos Latinbien?', a: 'Por cada compra acumulas puntos que puedes canjear por productos, descuentos en tus próximas compras o beneficios especiales. Los puntos se acreditan automáticamente y puedes consultar tu saldo desde tu perfil.' },
+    { q: '¿Puedo sugerir un comercio para que sea afiliado?', a: '¡Claro! Escríbenos por WhatsApp con el nombre y ubicación del comercio que recomiendas. Evaluamos nuevas alianzas constantemente para expandir nuestra red de beneficios.' },
+  ],
+
+  // ── Odoo Session + Clasificación de Rangos ──
+  session: {
+    loggedIn: false,
+    name: '',
+    partnerId: null,
+    // Datos consultados desde Odoo (solo lectura)
+    contractCount: 0,
+    totalBilling: 0,
+    totalPaid: 0,
+    totalPending: 0,
+    hasOverduePayments: false,   // true = no está al día
+    overdueCount: 0,
+    // Resultado de clasificación
+    tier: null,      // 'basica' | 'media' | 'vip' | null
+    tierName: 'Sin rango',
+    tierLabel: 'No califica',
+    tierIcon: '🔘',
+    tierColor: 'empty',
+    statusMessage: '',
+    contracts: [],   // lista resumida de contratos activos
+  },
+
+  // ── Configuración de rangos ──
+  tiersConfig: [
+    { id: 'vip',    name: 'VIP',     icon: '💎', contractsMin: 9,  contractsLabel: '> 8',   billingMin: 6000.01, billingLabel: '> \$6,000',  color: 'vip' },
+    { id: 'media',  name: 'Media',   icon: '🥈', contractsMin: 8,  contractsLabel: '≥ 8',   billingMin: 3000.01, billingMax: 6000,   billingLabel: '\$3,000 - \$6,000', color: 'media' },
+    { id: 'basica', name: 'Básica',  icon: '🥉', contractsMin: 4,  contractsLabel: '≥ 4',   billingMin: 3000,    billingLabel: '≥ \$3,000',   color: 'basica' },
+  ],
+
+  // ── Newsletter ──
+  newsletter: {
+    title: '📩 Recibe ofertas y beneficios exclusivos',
+    subtitle: 'Suscríbete para recibir noticias, descuentos en comercios afiliados y novedades del Club Latinbien.',
+    btn: 'Suscribirme',
+    thanks: '⭐ ¡Gracias por suscribirte! Te enviaremos las mejores ofertas.',
+  },
+
+  // ── Contact section ──
+  contact: {
+    title: '¿Necesitas ayuda?',
+    subtitle: 'Estamos aquí para atenderte. Contáctanos por cualquiera de estos canales.',
+    items: [
+      { icon: '📞', title: 'Teléfono', value: '+58 (0414) 7348785', href: 'tel:+584147348785', type: 'phone' },
+      { icon: '💬', title: 'WhatsApp', value: '+58 414-7348785', href: 'https://wa.me/584147348785?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Club%20Latinbien', type: 'wa' },
+      { icon: '✉️', title: 'Email', value: 'info@latinbien.com', href: 'mailto:info@latinbien.com', type: 'email' },
+      { icon: '📍', title: 'Ubicación', value: 'Av. Las Américas, CC Rodeo Plaza, Nivel 1, Mérida - Venezuela', href: '', type: 'text' },
+    ],
+  },
+
+  // ── Footer ──
+  footer: {
+    description: 'Latinoamericana de Bienes y Servicios, C.A. Mérida - Venezuela. Más de 10 años brindando soluciones a crédito.',
+    copyright: '<strong>LATINBIEN</strong> — Latinoamericana de Bienes y Servicios C.A. &copy; 2026 Todos los derechos reservados.',
+    columns: [
+      { title: 'El Club', links: [
+        { label: 'Beneficios', href: '#beneficios' }, { label: 'Comercios Afiliados', href: '#comercios' },
+        { label: 'Niveles', href: '#tarjetas' }, { label: 'Alianzas', href: '#alianzas' },
+        { label: 'FAQ', href: '#faq' }, { label: 'Ingresar', href: 'https://latinbien.com/web/login' },
+      ]},
+      { title: 'Latinbien', links: [
+        { label: 'Nosotros', href: 'https://latinbien.com/about-us' }, { label: 'Líneas de Crédito', href: 'https://latinbien.com/lineas-de-credito' },
+        { label: 'Cómo Comprar', href: 'https://latinbien.com/como-comprar' }, { label: 'Contacto', href: 'https://latinbien.com/contacto' },
+      ]},
+      { title: 'Más', links: [
+        { label: 'Soluciones para ti', href: 'https://latinbien.com/personas' }, { label: 'Para tu negocio', href: 'https://latinbien.com/empresas' },
+        { label: 'Convenios', href: 'https://latinbien.com/convenios' }, { label: 'Trabaja con nosotros', href: 'https://latinbien.com/jobs' },
+      ]},
+    ],
+  },
+};
+
+/* ============================================================
+   ║  R E N D E R   E N G I N E                                 ║
+   ║  No edites nada de aquí abajo                              ║
+   ============================================================ */
+const C = CONFIG;
+
+function render() {
+  const app = document.getElementById('app');
+  const html = [];
+
+  // HERO
+  const heroStats = C.hero.stats.map(s => `<div class="s"><h3>${s.value}</h3><p>${s.label}</p></div>`).join('');
+  html.push(`<section class="hero"><div class="container"><div class="hero-c">
+    <div class="badge">⭐ ${C.hero.badge}</div>
+    <h1>${C.hero.title}</h1>
+    <p>${C.hero.description}</p>
+    <div><a href="${C.hero.cta1.href}" class="btn btn-primary">📍 ${C.hero.cta1.label}</a>
+    <a href="${C.hero.cta2.href}" class="btn btn-outline-l" style="margin-left:10px;">${C.hero.cta2.label}</a></div>
+    <div class="hero-stats">${heroStats}</div>
+  </div><div class="hero-img"><img src="${C.hero.image}" alt="Club Latinbien" onerror="this.style.display='none'"></div></div></section>`);
+
+  // AUTH SECTION (se muestra/oculta según sesión)
+  html.push(`<div class="auth-section" id="authSection">
+    <!-- Login prompt (visible si NO logueado) -->
+    <div class="login-prompt" id="loginPrompt">
+      <h2>🔐 Únete al Club Latinbien</h2>
+      <p>Inicia sesión para gestionar tu membresía, ver tus beneficios exclusivos y acceder a tu cuenta.</p>
+      <a href="https://membresia-latinbien.latinbien-membresia.workers.dev/web/login" class="btn-login">🔑 Iniciar Sesión</a>
+      <p style="font-size:13px;opacity:.8;margin-top:16px;">¿No tienes cuenta? <a href="https://latinbien.com/web/signup" style="color:#fff;font-weight:700;text-decoration:underline;">Regístrate aquí</a></p>
+      <div style="margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://membresia-latinbien.latinbien-membresia.workers.dev/mi-membresia" class="btn-login" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;">👤 Mi Membresía</a>
+        <a href="https://membresia-latinbien.latinbien-membresia.workers.dev/admin-membresia" class="btn-login" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;">🛡️ Admin</a>
+      </div>
+    </div>
+    <!-- Saludo usuario (visible si logueado) -->
+    <div class="user-greeting" id="userGreeting" style="display:none;">
+      <div class="gt">
+        <h3 id="greetingName">👋 ¡Hola!</h3>
+        <p id="greetingMsg">Ya tienes una cuenta activa. Accede a tu panel para gestionar tu membresía.</p>
+      </div>
+      <div class="gs">
+        <a href="https://latinbien.com/my" class="btn btn-primary btn-sm">Ir a mi cuenta →</a>
+      </div>
+    </div>
+  </div>`);
+
+  // TIER DASHBOARD (Mi Rango)
+  html.push(`<section class="section bg-gray" id="mi-rango" style="padding:40px 0;">
+    <div class="container">
+      <div class="tier-dashboard fade-in" id="tierDashboard">
+        <div class="td-loading" id="tdLoading">
+          <div class="spinner"></div>
+          <p>Cargando datos de tu membresía...</p>
+        </div>
+        <div id="tdContent" style="display:none;"></div>
+      </div>
+    </div>
+  </section>`);
+
+  // MARQUEE
+  const marqueeItems = C.marquee.map(p => `<div class="pill"><div class="pi">${p.icon}</div><div class="pt">${p.text}</div></div>`).join('');
+  html.push(`<div class="marquee-wrap"><div class="marquee">${marqueeItems}${marqueeItems}</div></div>`);
+
+  // COMERCIOS
+  const affCards = C.affiliates.map(a => `
+    <div class="af-card af-${a.theme} fade-in">
+      <div class="af-banner"><span class="afi">${a.icon}</span><span class="af-discount">${a.discount}</span><span class="af-cat">${a.category}</span></div>
+      <div class="af-body"><h4>${a.name}</h4><div class="aft">📍 ${a.location}</div>
+        <div class="afb">${a.benefits.map(b => `<span>${b}</span>`).join('')}</div>
+        <a href="https://wa.me/${C.brand.phoneRaw}?text=${a.msg}" target="_blank" class="afc">${a.cta} →</a>
+      </div>
+    </div>`).join('');
+  html.push(`<section class="section bg-gray" id="comercios"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">📍 Comercios Afiliados</span>
+      <h2>Descuentos exclusivos en tus <span class="accent-c">lugares favoritos</span></h2>
+      <p>Como miembro del Club Latinbien accedes a descuentos especiales en restaurantes, estacionamientos, gimnasios y más.</p>
+    </div>
+    <div class="aff-grid">${affCards}</div>
+    <div style="text-align:center;margin-top:32px;padding:24px;background:var(--primary-ultra);border-radius:var(--r-lg);" class="fade-in">
+      <p style="font-size:14px;color:var(--g-600);margin-bottom:12px;">💡 <strong>¿Tienes un comercio y quieres ser afiliado?</strong> Únete a nuestra red y llega a más de 7,000 clientes.</p>
+      <a href="https://wa.me/${C.brand.phoneRaw}?text=Quiero%20ser%20un%20comercio%20afiliado%20del%20Club%20Latinbien" target="_blank" class="btn btn-secondary btn-sm">🤝 Quiero ser comercio afiliado</a>
+    </div>
+  </div></section>`);
+
+  // BENEFITS
+  const benCards = C.benefits.map(b => `
+    <div class="bc fade-in"><div class="icn">${b.icon}</div><h3>${b.title}</h3><p>${b.desc}</p><span class="tag">${b.tag}</span></div>
+  `).join('');
+  html.push(`<section class="section" id="beneficios"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">⭐ Beneficios del Club</span>
+      <h2>Todo lo que obtienes al ser <span class="accent-c">miembro</span></h2>
+      <p>Diseñamos cada beneficio pensando en ti.</p>
+    </div>
+    <div class="bg-grid">${benCards}</div>
+  </div></section>`);
+
+  // CREDIT CARDS
+  const cardHtml = C.tiers.map(t => {
+    const featured = t.featured ? 'featured' : '';
+    const popular = t.featured ? `<span class="popular">${t.popular}</span>` : '';
+    const feats = t.features.map(f => `<li><span class="ck">✓</span> ${f}</li>`).join('');
+    const btnCls = t.btn.type === 'primary' ? 'btn-primary' : t.btn.type === 'secondary' ? 'btn-secondary' : 'btn-outline';
+    return `<div class="cc c-${t.theme} ${featured} fade-in">${popular}
+      <div class="cc-bg"><div class="cp"></div><span class="ctb">${t.badge}</span><div class="chip"></div><div class="cl">${t.level}</div><div class="ct">${t.title}</div><div class="ci">Inicial desde: <strong>${t.initial}</strong> • 6 a 20 cuotas</div></div>
+      <div class="cc-body"><ul class="cf">${feats}</ul></div>
+      <div class="cc-footer"><a href="${t.btn.href}" target="${t.btn.href.startsWith('#') ? '_self' : '_blank'}" class="btn ${btnCls} btn-sm">${t.btn.label}</a></div>
+    </div>`;
+  }).join('');
+  html.push(`<section class="section bg-gray" id="tarjetas"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">👑 Niveles de Membresía</span>
+      <h2>Tu tarjeta, tu <span class="accent-c">nivel, tus beneficios</span></h2>
+      <p>Cada nivel está diseñado para ofrecerte más beneficios a medida que creces con nosotros.</p>
+    </div>
+    <div class="cc-grid">${cardHtml}</div>
+  </div></section>`);
+
+  // TABS
+  const tabBtns = C.tabs.map(t => `<button class="tab-btn" onclick="switchTab('${t.id}')">${t.label}</button>`).join('');
+  const tabContents = C.tabs.map(t => `
+    <div class="tab-content" id="tab-${t.id}">
+      <div style="text-align:center;margin-bottom:24px;"><span style="font-size:36px;">${t.stars}</span>
+        <h3 style="font-size:20px;font-weight:700;color:var(--primary);margin-top:8px;">${t.title}</h3>
+        <p style="font-size:14px;color:var(--g-500);">${t.subtitle}</p>
+      </div>
+      <div class="tab-features">${t.features.map(f => `<div class="tab-feature"><div class="tfi">${f.icon}</div><div><h4>${f.title}</h4><p>${f.desc}</p></div></div>`).join('')}</div>
+    </div>`).join('');
+  html.push(`<section class="section"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">📊 Comparativa Interactiva</span>
+      <h2>Explora cada nivel y <span class="accent-c">sus beneficios</span></h2>
+      <p>Haz clic en cada pestaña para conocer los detalles de cada membresía.</p>
+    </div>
+    <div class="tabs-wrap fade-in"><div class="tabs-header">${tabBtns}</div>${tabContents}</div>
+  </div></section>`);
+
+  // STATUS
+  const stepsHtml = C.status.steps.map(s =>
+    `<div class="ls ${s.status}"><div class="li">${s.icon}</div><div class="dot"></div><div class="lbl">${s.label}</div><div class="ld">${s.detail}</div></div>`
+  ).join('');
+  html.push(`<section class="section bg-gray"><div class="container"><div class="status-box fade-in">
+    <div class="sh"><h3>${C.status.title}</h3><p>${C.status.subtitle}</p></div>
+    <div class="ladder">${stepsHtml}</div>
+    <div style="text-align:center;margin-top:32px;padding:20px;background:var(--g-100);border-radius:12px;">
+      <p style="font-size:14px;color:var(--g-600);margin-bottom:12px;">💡 <strong>Tu estatus actual:</strong> <span style="color:var(--accent);font-weight:700;">${C.status.currentLevel}</span></p>
+      <p style="font-size:13px;color:var(--g-500);">${C.status.remainingMsg}</p>
+      <div style="max-width:400px;margin:16px auto 0;background:var(--g-200);border-radius:100px;height:8px;overflow:hidden;">
+        <div style="width:${C.status.progressPercent}%;height:100%;background:linear-gradient(90deg,var(--accent),var(--gold));border-radius:100px;transition:width 1s ease;"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;max-width:400px;margin:6px auto 0;font-size:11px;color:var(--g-500);">
+        <span style="color:var(--bronze);font-weight:600;">Básico</span>
+        <span style="color:var(--accent);font-weight:700;">▼ Medio (Tú)</span>
+        <span style="color:var(--primary);font-weight:600;">VIP</span>
+      </div>
+      <p style="font-size:12px;color:var(--g-400);margin-top:12px;">${C.status.nextGoal}</p>
+    </div>
+  </div></div></section>`);
+
+  // ALLIANCES
+  const logosHtml = C.alliances.logos.map(l => `<div class="al-logo"><span>${l}</span></div>`).join('');
+  const alBenefits = C.alliances.benefits.map(b =>
+    `<div class="al-card fade-in"><div class="ai">${b.icon}</div><h4>${b.title}</h4><p>${b.desc}</p></div>`
+  ).join('');
+  html.push(`<section class="section" id="alianzas"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">🤝 ${C.alliances.title}</span>
+      <h2>${C.alliances.subtitle}</h2><p>${C.alliances.description}</p>
+    </div>
+    <div class="alliance-logos fade-in">${logosHtml}</div>
+    <div class="sec-head fade-in" style="margin-top:20px;"><span class="sub">💎 Beneficios para Aliados</span>
+      <h2>${C.alliances.benefitsTitle}</h2>
+    </div>
+    <div class="al-grid">${alBenefits}</div>
+    <div style="text-align:center;margin-top:36px;">
+      <a href="${C.alliances.cta1.href}" target="_blank" class="btn btn-primary">${C.alliances.cta1.label}</a>
+      <a href="${C.alliances.cta2.href}" target="_blank" class="btn btn-outline" style="margin-left:10px;">${C.alliances.cta2.label}</a>
+    </div>
+  </div></section>`);
+
+  // STEPS
+  const stepsItems = C.steps.map(s =>
+    `<div class="st fade-in"><div class="num">${s.num}</div><h4>${s.title}</h4><p>${s.desc}</p></div>`
+  ).join('');
+  html.push(`<section class="section bg-gray"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">👉 ¿Cómo funciona?</span>
+      <h2>Únete al club en <span class="accent-c">${C.steps.length} pasos</span></h2>
+      <p>Hemos simplificado el proceso para que empieces a disfrutar de tus beneficios lo antes posible.</p>
+    </div>
+    <div class="steps">${stepsItems}</div>
+  </div></section>`);
+
+  // TESTIMONIALS
+  const testItems = C.testimonials.map(t =>
+    `<div class="tc fade-in"><span class="bt bt-${t.badge}">⭐ Miembro ${t.badge.charAt(0).toUpperCase()+t.badge.slice(1)}</span>
+      <div class="stars">${'⭐'.repeat(t.stars)}</div>
+      <blockquote>${t.quote}</blockquote>
+      <div class="author"><div class="av">${t.initials}</div><div class="info"><h4>${t.author}</h4><span>${t.detail}</span></div></div>
+    </div>`
+  ).join('');
+  html.push(`<section class="section"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">💬 Historias de nuestros miembros</span>
+      <h2>Ellos ya son <span class="accent-c">Club Latinbien</span></h2>
+      <p>Más de 7,000 clientes confían en nosotros.</p>
+    </div>
+    <div class="test-grid">${testItems}</div>
+  </div></section>`);
+
+  // CTA
+  html.push(`<section class="cta"><div class="container">
+    <h2>${C.ctaBanner.title}</h2><p>${C.ctaBanner.description}</p>
+    <a href="${C.ctaBanner.btn.href}" target="_blank" class="btn btn-white">${C.ctaBanner.btn.label}</a>
+  </div></section>`);
+
+  // FAQ
+  const faqItems = C.faq.map(f =>
+    `<div class="faq-i fade-in"><button class="faq-q" onclick="toggleFaq(this)">${f.q}<span class="fi">+</span></button>
+      <div class="faq-a"><p>${f.a}</p></div></div>`
+  ).join('');
+  html.push(`<section class="section" id="faq"><div class="container">
+    <div class="sec-head fade-in"><span class="sub">❓ Preguntas Frecuentes</span>
+      <h2>Todo sobre el <span class="accent-c">Club Latinbien</span></h2>
+      <p>Resolvemos las dudas más comunes.</p>
+    </div>
+    <div class="faq">${faqItems}</div>
+  </div></section>`);
+
+  // NEWSLETTER
+  html.push(`<section class="news"><div class="container"><div class="news-box">
+    <h3>${C.newsletter.title}</h3><p>${C.newsletter.subtitle}</p>
+    <form class="news-form" onsubmit="event.preventDefault();alert('${C.newsletter.thanks}');">
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <button type="submit">${C.newsletter.btn}</button>
+    </form>
+  </div></div></section>`);
+
+  // CONTACT
+  const contactItems = C.contact.items.map(c =>
+    `<div class="contact-card"><div class="ic">${c.icon}</div><h3>${c.title}</h3>
+      ${c.href ? `<a href="${c.href}" target="_blank">${c.value}</a>` : `<p>${c.value}</p>`}</div>`
+  ).join('');
+  html.push(`<section class="contact-section"><div class="container">
+    <div class="sec-head"><h2>${C.contact.title}</h2><p>${C.contact.subtitle}</p></div>
+    <div class="contact-grid">${contactItems}</div>
+  </div></section>`);
+
+  // FOOTER
+  const footerCols = C.footer.columns.map(col =>
+    `<div><h4>${col.title}</h4>${col.links.map(l => `<a href="${l.href}" target="${l.href.startsWith('#') ? '_self' : '_blank'}">${l.label}</a>`).join('')}</div>`
+  ).join('');
+  html.push(`<footer class="footer"><div class="container">
+    <div><div class="fl"><img src="${C.brand.logo}" alt="${C.brand.name}" onerror="this.style.display='none'"></div>
+      <p>${C.footer.description}</p>
+      <div class="social">
+        <a href="${C.brand.social.facebook}" target="_blank" aria-label="Facebook">f</a>
+        <a href="${C.brand.social.instagram}" target="_blank" aria-label="Instagram">●</a>
+        <a href="https://wa.me/${C.brand.phoneRaw}" target="_blank" aria-label="WhatsApp">💬</a>
+      </div>
+    </div>
+    ${footerCols}
+  </div><div class="fb">${C.footer.copyright}</div></footer>`);
+
+  app.innerHTML = html.join('');
+
+  // Navbar
+  const menuItems = C.menu.map(m => {
+    var cls = m.type === 'cta' ? 'nav-cta' : m.type === 'login' ? 'nav-login' : m.type === 'membership' ? 'nav-membership' : m.type === 'admin' ? 'nav-admin' : '';
+    const active = m.active ? 'style="color:var(--primary);font-weight:600;"' : '';
+    const target = '_self';
+    return `<li><a href="${m.href}" target="${target}" class="${cls}" ${active}>${m.label}</a></li>`;
+  }).join('');
+  document.getElementById('navLinks').innerHTML = menuItems;
+
+  // WhatsApp
+  document.getElementById('wspFloat').href = `https://wa.me/${C.brand.phoneRaw}?text=${C.brand.whatsappMsg}`;
+
+  // Activate first tab
+  const firstTab = C.tabs[0];
+  if (firstTab) {
+    document.querySelector('.tab-btn')?.classList.add('active');
+    document.getElementById(`tab-${firstTab.id}`)?.classList.add('active');
+  }
+}
+
+// ===== INIT =====
+render();
+
+// ===== ODOO JSON-RPC CLIENT =====
+// Funciones de consulta a Odoo (solo lectura, no modifica nada)
+async function odooCall(model, method, args, kwargs) {
+  const resp = await fetch('/web/dataset/call_kw/' + model + '/' + method, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      jsonrpc: '2.0',
+      method: 'call',
+      params: { model: model, method: method, args: args || [], kwargs: kwargs || {} },
+      id: 'club_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5)
+    })
+  });
+  const data = await resp.json();
+  if (data.error) throw new Error(data.error.data?.message || 'Error Odoo');
+  return data.result;
+}
+
+// ===== CLASIFICACIÓN DE RANGOS =====
+function calculateTier(contractCount, totalBilling, hasOverdue) {
+  if (hasOverdue) {
+    return {
+      tier: null, name: 'Suspendido', icon: '🚫', color: 'suspendido',
+      label: 'Membresía suspendida',
+      message: 'Tienes pagos vencidos. Regulariza tu deuda para reactivar tu rango.',
+      nextStep: 'Regularizar pagos →',
+      nextHref: 'https://latinbien.com/my'
+    };
+  }
+  if (contractCount > 8 && totalBilling > 6000) {
+    return {
+      tier: 'vip', name: 'VIP', icon: '💎', color: 'vip',
+      label: 'Membresía VIP',
+      message: 'Acceso a todos los beneficios, eventos exclusivos y crédito premium.',
+      nextStep: 'Ir a mi cuenta',
+      nextHref: 'https://latinbien.com/my'
+    };
+  }
+  if (contractCount >= 8 && totalBilling >= 3000.01 && totalBilling <= 6000) {
+    return {
+      tier: 'media', name: 'Media', icon: '🥈', color: 'media',
+      label: 'Membresía Media',
+      message: 'Descuentos en comercios, envío prioritario y soporte dedicado.',
+      nextStep: 'Ir a mi cuenta',
+      nextHref: 'https://latinbien.com/my'
+    };
+  }
+  if (contractCount >= 4 && totalBilling >= 3000) {
+    return {
+      tier: 'basica', name: 'Básica', icon: '🥉', color: 'basica',
+      label: 'Membresía Básica',
+      message: 'Acceso a línea de crédito básica con inicial desde 50%.',
+      nextStep: 'Ir a mi cuenta',
+      nextHref: 'https://latinbien.com/my'
+    };
+  }
+  // No cumple requisitos
+  return {
+    tier: null, name: 'Sin rango', icon: '🔘', color: 'empty',
+    label: 'Aún no calificas',
+    message: 'Necesitas al menos 4 contratos activos y \$3,000 en facturación para obtener un rango.',
+    nextStep: 'Ver comercios',
+    nextHref: '#club-comercios'
+  };
+}
+
+// ===== RENDERIZAR TABLERO DE RANGOS =====
+function renderTierDashboard(data) {
+  const tdContent = document.getElementById('tdContent');
+  const tdLoading = document.getElementById('tdLoading');
+  if (!tdContent) return;
+
+  const tierInfo = calculateTier(data.contractCount, data.totalBilling, data.hasOverduePayments);
+
+  // Preparar métricas
+  const billingFormatted = '$' + data.totalBilling.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  const paidFormatted = '$' + data.totalPaid.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  const pendingFormatted = '$' + data.totalPending.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
+  // Generar comparativa de rangos
+  const tiersHtml = CONFIG.tiersConfig.map(t => {
+    const achieved = (t.id === tierInfo.tier) || (
+      t.id === 'basica' && data.contractCount >= 4 && data.totalBilling >= 3000 && !data.hasOverduePayments
+    );
+    const cls = t.id === tierInfo.tier ? 'active' : (achieved ? 'reached' : 'unreached');
+    const check = t.id === tierInfo.tier ? '<div class="tb-check checked">✓</div>' :
+                  (achieved ? '<div class="tb-check checked" style="background:var(--g-400)">✓</div>' :
+                              '<div class="tb-check unchecked">✗</div>');
+    return `<div class="td-tier-box ${cls}">
+      ${check}
+      <div class="tb-icon">${t.icon}</div>
+      <div class="tb-name">${t.name}</div>
+      <div class="tb-req">${t.contractsLabel} contratos &bull; ${t.billingLabel}</div>
+    </div>`;
+  }).join('');
+
+  // Estado de pago
+  const payStatus = data.hasOverduePayments
+    ? '<span class="sb-dot sb-red"></span> Pagos vencidos — No al día'
+    : '<span class="sb-dot sb-green"></span> Al día en pagos';
+
+  tdContent.innerHTML = `
+    <div class="td-head">
+      <h3>${tierInfo.icon} Miembrosía ${tierInfo.name}</h3>
+      <span class="td-badge td-badge-${tierInfo.color}">
+        ${tierInfo.label}
+      </span>
+    </div>
+    <div class="td-body">
+      <div class="td-metrics">
+        <div class="td-metric highlight">
+          <div class="tm-icon">📄</div>
+          <div class="tm-value">${data.contractCount}</div>
+          <div class="tm-label">Contratos Activos</div>
+        </div>
+        <div class="td-metric highlight">
+          <div class="tm-icon">💰</div>
+          <div class="tm-value">${billingFormatted}</div>
+          <div class="tm-label">Facturación Total</div>
+        </div>
+        <div class="td-metric">
+          <div class="tm-icon">✅</div>
+          <div class="tm-value">${paidFormatted}</div>
+          <div class="tm-label">Total Pagado</div>
+        </div>
+        <div class="td-metric ${data.hasOverduePayments ? 'highlight' : ''}">
+          <div class="tm-icon">⏳</div>
+          <div class="tm-value" style="color:${data.hasOverduePayments ? 'var(--danger)' : 'var(--success)'}">${pendingFormatted}</div>
+          <div class="tm-label">Saldo Pendiente</div>
+          ${data.overdueCount > 0 ? `<div class="tm-sub">${data.overdueCount} cuota(s) vencida(s)</div>` : ''}
+        </div>
+      </div>
+
+      <div class="td-status-bar">
+        ${payStatus}
+        <span style="margin-left:auto;font-size:12px;">${tierInfo.message}</span>
+      </div>
+
+      <div class="td-divider"></div>
+
+      <h4 style="font-size:14px;font-weight:600;color:var(--g-600);margin-bottom:12px;">📊 Comparativa de rangos</h4>
+      <div class="td-tiers-compare">${tiersHtml}</div>
+
+      <div style="text-align:center;margin-top:24px;">
+        <a href="${tierInfo.nextHref}" target="_blank" class="btn btn-primary">${tierInfo.nextStep}</a>
+        <a href="https://wa.me/${CONFIG.brand.phoneRaw}?text=Quiero%20informaci%C3%B3n%20sobre%20mi%20rango%20en%20el%20Club%20Latinbien" target="_blank" class="btn btn-outline btn-sm" style="margin-left:10px;">💬 Consultar por WhatsApp</a>
+      </div>
+    </div>
+  `;
+
+  tdLoading.style.display = 'none';
+  tdContent.style.display = 'block';
+}
+
+// ===== CONSULTAR DATOS DESDE ODOO (solo lectura) =====
+async function fetchContractData(partnerId) {
+  try {
+    // 1. Contar contratos activos (account.move con status operativo 4 o 6)
+    const contractIds = await odooCall('account.move', 'search', [[
+      ['partner_id', '=', partnerId],
+      ['x_status_operativos', 'in', ['4', '6']],
+      ['move_type', '=', 'out_invoice']
+    ]]);
+
+    const contractCount = contractIds.length;
+
+    // 2. Leer datos financieros de los contratos
+    let totalBilling = 0;
+    let totalPaid = 0;
+    let totalPending = 0;
+    let hasOverduePayments = false;
+    let overdueCount = 0;
+
+    if (contractCount > 0) {
+      const contracts = await odooCall('account.move', 'read', [contractIds, ['amount_total', 'amount_residual']]);
+
+      for (const c of contracts) {
+        const total = parseFloat(c.amount_total) || 0;
+        const residual = parseFloat(c.amount_residual) || 0;
+        totalBilling += total;
+        totalPending += residual;
+        totalPaid += (total - residual);
+      }
+
+      // 3. Verificar cuotas vencidas (invoice.installment.line)
+      try {
+        const overdueLines = await odooCall('invoice.installment.line', 'search', [[
+          ['invoice_id', 'in', contractIds],
+          ['state', '=', 'vencido']
+        ]]);
+        overdueCount = overdueLines.length;
+        hasOverduePayments = overdueCount > 0;
+      } catch(e) {
+        // Si el modelo no existe, intentar con account.move directamente
+        // Revisar si algún contrato tiene amount_residual == amount_total (no se ha pagado nada)
+        if (totalPending >= totalBilling * 0.5) {
+          hasOverduePayments = true;
+        }
+      }
+    }
+
+    return {
+      contractCount,
+      totalBilling,
+      totalPaid,
+      totalPending,
+      hasOverduePayments,
+      overdueCount,
+      contracts: contractIds
+    };
+  } catch(e) {
+    console.warn('Club Latinbien: Error consultando datos', e);
+    return null;
+  }
+}
+
+// ===== ODOO SESSION DETECTION + TIER CLASSIFICATION =====
+async function checkOdooSession() {
+  try {
+    const resp = await fetch('/web/session/get_session_info', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        jsonrpc: '2.0',
+        method: 'call',
+        params: {},
+        id: 'club_session_' + Date.now()
+      })
+    });
+    const data = await resp.json();
+    if (data.result && data.result.uid) {
+      const s = data.result;
+      const isPublic = !s.username || s.username === '' ||
+                       s.username === 'public' ||
+                       s.share === true ||
+                       (s.partner_id && s.partner_id[1] === 'Public');
+
+      if (!isPublic) {
+        // Usuario autenticado
+        CONFIG.session.loggedIn = true;
+        CONFIG.session.name = s.name || s.username || 'Miembro';
+        CONFIG.session.partnerId = s.partner_id ? s.partner_id[0] : null;
+
+        // Mostrar saludo
+        const authSec = document.getElementById('authSection');
+        if (authSec) authSec.classList.add('visible');
+        document.getElementById('loginPrompt').style.display = 'none';
+        const userGreeting = document.getElementById('userGreeting');
+        if (userGreeting) userGreeting.style.display = 'flex';
+        document.getElementById('greetingName').textContent = '👋 ¡Hola, ' + CONFIG.session.name + '!';
+
+        // Consultar datos desde Odoo
+        if (CONFIG.session.partnerId) {
+          const contractData = await fetchContractData(CONFIG.session.partnerId);
+          if (contractData) {
+            Object.assign(CONFIG.session, contractData);
+            // Actualizar greeting con el nivel
+            const tierInfo = calculateTier(contractData.contractCount, contractData.totalBilling, contractData.hasOverduePayments);
+            const greetingMsg = document.getElementById('greetingMsg');
+            if (greetingMsg) {
+              greetingMsg.innerHTML = 'Rango actual: <strong>' + tierInfo.icon + ' ' + tierInfo.name + '</strong> &bull; ' +
+                contractData.contractCount + ' contratos &bull; <a href="#mi-rango" style="color:var(--accent);font-weight:600;">Ver tablero completo →</a>';
+            }
+            // Renderizar tablero de rangos
+            renderTierDashboard(contractData);
+          } else {
+            // Fallback: mostrar dashboard con datos vacíos
+            renderTierDashboard({
+              contractCount: 0, totalBilling: 0, totalPaid: 0,
+              totalPending: 0, hasOverduePayments: false, overdueCount: 0
+            });
+          }
+        }
+
+        return;
+      }
+    }
+  } catch(e) {
+    console.log('Club Latinbien: No se pudo verificar sesión', e);
+  }
+
+  // No autenticado o error (vista local o público)
+  const authSec = document.getElementById('authSection');
+  if (authSec) authSec.classList.add('visible');
+  document.getElementById('loginPrompt').style.display = 'block';
+  const userGreeting = document.getElementById('userGreeting');
+  if (userGreeting) userGreeting.style.display = 'none';
+
+      // ── MODO DEMO LOCAL (Datos reales de Yarley Carmona) ──
+  if (window.location.protocol === 'file:') {
+    document.getElementById('loginPrompt').style.display = 'none';
+    if (userGreeting) {
+      userGreeting.style.display = 'flex';
+      document.getElementById('greetingName').textContent = '\U0001f44b \u00a1Hola, YARLEY CAROLINA CARMONA HIDALGO!';
+      document.getElementById('greetingMsg').innerHTML = 'Rango actual: <strong>[-] Sin rango</strong> &bull; 1 contratos &bull; <a href="#mi-rango" style="color:var(--accent);font-weight:600;">Ver tablero completo \u2192</a>';
+    }
+    if (authSec) authSec.classList.add('visible');
+    renderTierDashboard({"contractCount": 1, "totalBilling": 1595.33, "totalPaid": 505.82, "totalPending": 1089.51, "hasOverduePayments": false, "overdueCount": 0});
+  }
+}
+
+// Ejecutar detección después del render
+setTimeout(checkOdooSession, 150);
+
+// ===== UI INTERACTIONS =====
+
+// Mobile menu
+document.getElementById('menuToggle').addEventListener('click', function() {
+  this.classList.toggle('active');
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.nav-links a').forEach(l => {
+  l.addEventListener('click', () => {
+    document.getElementById('menuToggle').classList.remove('active');
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+// Navbar scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// IntersectionObserver for fade-in
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Tabs
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.querySelector(`.tab-btn[onclick*="'${tab}'"]`).classList.add('active');
+  document.getElementById(`tab-${tab}`).classList.add('active');
+}
+
+// FAQ
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-i');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-i.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const id = this.getAttribute('href');
+    if (id === '#') return;
+    const target = document.querySelector(id);
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>
