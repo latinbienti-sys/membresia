@@ -9,21 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="icon" href="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" type="image/png">
 <style>
-:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-light:#3D6194;--primary-ultra:#e8edf5;--accent:#F98B10;--accent-light:#fff3e0;--accent-dark:#e07d00;--gold:#D4A017;--silver:#8E9EAB;--bronze:#CD7F32;--success:#10b981;--danger:#ef4444;--dark:#1a1a2e;--g-100:#f8f9fa;--g-200:#e9ecef;--g-300:#dee2e6;--g-400:#ced4da;--g-500:#adb5bd;--g-600:#6c757d;--g-700:#495057;--white:#fff;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--r:12px;--r-lg:20px;--t:all 0.3s cubic-bezier(0.4,0,0.2,1)}
+:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-ultra:#e8edf5;--accent:#F98B10;--accent-light:#fff3e0;--accent-dark:#e07d00;--gold:#D4A017;--silver:#8E9EAB;--bronze:#CD7F32;--success:#10b981;--danger:#ef4444;--dark:#1a1a2e;--g-100:#f8f9fa;--g-200:#e9ecef;--g-300:#dee2e6;--g-500:#adb5bd;--g-600:#6c757d;--g-700:#495057;--white:#fff;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--r:12px;--r-lg:20px;--t:all 0.3s cubic-bezier(0.4,0,0.2,1)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--dark);background:var(--g-100);line-height:1.6;-webkit-font-smoothing:antialiased}
 .container{max-width:960px;margin:0 auto;padding:0 20px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;border:none;cursor:pointer;font-family:inherit;transition:var(--t)}
 .btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 32px rgba(249,139,16,0.3)}
-.btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}.btn-outline:hover{background:var(--primary);color:#fff;transform:translateY(-2px)}
-.btn-sm{padding:10px 18px;font-size:13px;border-radius:8px}
 .btn-block{width:100%;justify-content:center}
 .card{background:#fff;border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow);margin-bottom:20px;border:1px solid var(--g-200)}
 .text-center{text-align:center}
-.fade-in{opacity:0;transform:translateY(16px);transition:opacity 0.4s ease,transform 0.4s ease}
-.fade-in.visible{opacity:1;transform:translateY(0)}
-
-/* Navbar */
 .navbar{background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--g-200);position:sticky;top:0;z-index:100}
 .navbar .container{display:flex;align-items:center;justify-content:space-between;height:64px}
 .navbar .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -31,29 +25,19 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 .navbar .logo span{font-size:18px;font-weight:800;color:var(--primary);letter-spacing:-0.5px}
 .navbar .logo span .accent-c{color:var(--accent)}
 .navbar .right{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--g-600)}
-
-/* Hero */
 .hero{background:linear-gradient(135deg,var(--primary) 0%,#0f2250 100%);padding:48px 0 40px;text-align:center}
 .hero h1{font-size:clamp(24px,4vw,36px);font-weight:900;color:#fff;margin-bottom:8px}
 .hero p{font-size:15px;color:rgba(255,255,255,0.7);max-width:500px;margin:0 auto}
 .hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,139,16,0.15);color:var(--accent);padding:5px 16px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:16px;border:1px solid rgba(249,139,16,0.2)}
-
-/* Loading */
-.loading{text-align:center;padding:60px 20px;color:var(--g-500)}
-.loading .spinner{width:40px;height:40px;border:3px solid var(--g-200);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* Tier card */
 .tier-card{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:28px;border:1px solid var(--g-200)}
 .tier-head{padding:28px 28px 20px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px}
 .tier-head .th-left{display:flex;align-items:center;gap:14px}
 .tier-head .th-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px}
-.tier-head .th-icon.empty{background:var(--g-100)}.tier-head .th-icon.basica{background:var(--accent-light)}.tier-head .th-icon.media{background:#e9ecef}.tier-head .th-icon.vip{background:var(--primary-ultra)}.tier-head .th-icon.suspendido{background:#fff0f0}
+.tier-head .th-icon.empty{background:var(--g-100)}.tier-head .th-icon.basica{background:var(--accent-light)}.tier-head .th-icon.media{background:#e9ecef}.tier-head .th-icon.vip{background:var(--primary-ultra)}
 .tier-head .th-info h2{font-size:22px;font-weight:800;color:var(--primary);margin-bottom:2px}
 .tier-head .th-info span{font-size:13px;color:var(--g-500)}
 .tier-head .th-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 18px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-.th-badge-empty{background:var(--g-100);color:var(--g-500)}.th-badge-basica{background:var(--accent-light);color:var(--bronze)}.th-badge-media{background:#e9ecef;color:#4a5568}.th-badge-vip{background:var(--primary-ultra);color:var(--primary)}.th-badge-suspendido{background:#fff0f0;color:var(--danger)}
-
+.th-badge-empty{background:var(--g-100);color:var(--g-500)}.th-badge-basica{background:var(--accent-light);color:var(--bronze)}.th-badge-media{background:#e9ecef;color:#4a5568}.th-badge-vip{background:var(--primary-ultra);color:var(--primary)}
 .tier-body{padding:0 28px 28px}
 .tier-points{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:24px}
 .tier-point{background:var(--g-100);border-radius:var(--r);padding:18px;text-align:center}
@@ -61,47 +45,29 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 .tier-point .tp-lbl{font-size:12px;color:var(--g-500);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
 .tier-point .tp-sub{font-size:11px;color:var(--g-400);margin-top:2px}
 .tier-point.highlight .tp-val{color:var(--accent)}
-
-/* Progress */
 .progress-section{margin-top:20px}
 .progress-section h4{font-size:14px;font-weight:700;color:var(--primary);margin-bottom:12px;display:flex;justify-content:space-between}
 .progress-bar{background:var(--g-200);border-radius:100px;height:10px;overflow:hidden;margin-bottom:6px}
-.progress-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--accent),var(--gold));transition:width .8s ease;width:0%}
+.progress-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--accent),var(--gold));transition:width .8s ease}
 .progress-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--g-500)}
 .progress-next{font-size:13px;color:var(--g-600);margin-top:8px;padding:12px;background:var(--g-100);border-radius:var(--r)}
-
-/* Status bar */
-.status-bar{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:var(--r);font-size:13px;font-weight:500;margin-top:16px}
-.status-bar .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.status-ok{background:var(--g-100);color:var(--g-700)}.status-ok .dot{background:var(--success)}
-.status-warn{background:#fff0f0;color:var(--danger)}.status-warn .dot{background:var(--danger)}
-
-/* Contracts table */
-.contracts-table{width:100%;border-collapse:collapse;font-size:13px}
-.contracts-table th{padding:10px 12px;background:var(--g-100);color:var(--g-600);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px;text-align:left;border-bottom:2px solid var(--g-200)}
-.contracts-table td{padding:10px 12px;border-bottom:1px solid var(--g-100);color:var(--g-700)}
-.contracts-table tr:hover td{background:var(--g-100)}
-.badge-status{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;text-transform:uppercase}
-.badge-entregado{background:#e8f5e9;color:#2e7d32}.badge-aprobado{background:#fff3e0;color:#e65100}.badge-cancelado{background:#fce4ec;color:#c62828}
-
-/* Next level card */
 .next-level{background:linear-gradient(135deg,var(--primary-ultra),#fff);border-radius:var(--r-lg);padding:24px;margin-top:20px;border:1px solid var(--g-200)}
 .next-level h4{font-size:15px;font-weight:700;color:var(--primary);margin-bottom:8px}
 .next-level p{font-size:13px;color:var(--g-600);line-height:1.6}
 .next-level .steps{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
 .next-level .steps .step{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--g-600);background:#fff;padding:6px 14px;border-radius:100px;border:1px solid var(--g-200)}
-
-/* Login prompt */
-.login-prompt{max-width:480px;margin:60px auto;text-align:center;padding:48px 24px;background:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow-lg)}
-.login-prompt h2{font-size:24px;font-weight:800;color:var(--primary);margin-bottom:10px}
-.login-prompt p{font-size:14px;color:var(--g-600);margin-bottom:20px}
-
-/* Footer */
+.status-bar{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:var(--r);font-size:13px;font-weight:500;margin-top:16px}
+.status-bar .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.status-ok{background:var(--g-100);color:var(--g-700)}.status-ok .dot{background:var(--success)}
+.contracts-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+.contracts-table th{padding:10px 12px;background:var(--g-100);color:var(--g-600);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px;text-align:left;border-bottom:2px solid var(--g-200)}
+.contracts-table td{padding:10px 12px;border-bottom:1px solid var(--g-100);color:var(--g-700)}
+.contracts-table tr:hover td{background:var(--g-100)}
+.badge-status{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;text-transform:uppercase}
+.badge-entregado{background:#e8f5e9;color:#2e7d32}.badge-aprobado{background:#fff3e0;color:#e65100}
 .footer{text-align:center;padding:32px 0;font-size:12px;color:var(--g-500);border-top:1px solid var(--g-200);margin-top:40px}
-
-@media(max-width:600px){
-  .tier-head{flex-direction:column}.tier-points{grid-template-columns:1fr 1fr}.container{padding:0 16px}
-}
+.live-only{display:none}
+@media(max-width:600px){.tier-head{flex-direction:column}.tier-points{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -122,18 +88,86 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 
 <div class="hero">
   <div class="container">
-    <div class="badge">🎯 Mi Membresía</div>
+    <div class="badge"> Mi Membresia</div>
     <h1>Tu rango y beneficios</h1>
     <p>Revisa tu nivel actual, puntos acumulados y lo que necesitas para subir al siguiente rango.</p>
   </div>
 </div>
 
-<div class="container" id="app">
-  <div class="loading" id="loading">
-    <div class="spinner"></div>
-    <p>Cargando información de tu membresía...</p>
+<div class="container" style="padding:24px 0;">
+
+  <!-- Demo content (visible en GitHub Pages o file://) -->
+  <div id="demoContent">
+
+    <div class="tier-card">
+      <div class="tier-head">
+        <div class="th-left">
+          <div class="th-icon basica">&#x1F949;</div>
+          <div class="th-info">
+            <h2>Membresia Basica</h2>
+            <span>30 puntos acumulados</span>
+          </div>
+        </div>
+        <span class="th-badge th-badge-basica">&#x1F949; Basica</span>
+      </div>
+      <div class="tier-body">
+        <div class="tier-points">
+          <div class="tier-point highlight"><div class="tp-val">30</div><div class="tp-lbl">Puntos totales</div></div>
+          <div class="tier-point"><div class="tp-val">1</div><div class="tp-lbl">Contratos activos</div><div class="tp-sub">10 pts c/u</div></div>
+          <div class="tier-point"><div class="tp-val">$1,595</div><div class="tp-lbl">Facturado total</div><div class="tp-sub">5 pts / $1,000</div></div>
+          <div class="tier-point"><div class="tp-val">&#x2713;</div><div class="tp-lbl">Al dia</div><div class="tp-sub">+15 pts bono</div></div>
+        </div>
+
+        <div class="progress-section">
+          <h4><span>Progreso a <strong>&#x1F948; Media</strong></span> <span>30/40 pts</span></h4>
+          <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
+          <div class="progress-labels"><span>Actual: Basica</span><span style="font-weight:700;">75%</span><span>Siguiente: Media</span></div>
+          <div class="next-level">
+            <h4>&#x1F3AF; Como llegar a Media?</h4>
+            <p>Necesitas <strong>10 puntos mas</strong>. Acumula puntos asi:</p>
+            <div class="steps">
+              <span class="step">&#x1F4C4; 10 pts por contrato activo</span>
+              <span class="step">&#x1F4B0; 5 pts por cada $1,000 facturados</span>
+              <span class="step">&#x2705; 15 pts por estar al dia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:12px;">&#x1F4CA; Resumen</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;">
+        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--primary);">1</div><div style="font-size:11px;color:var(--g-500);">Activos</div></div>
+        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--g-600);">0</div><div style="font-size:11px;color:var(--g-500);">Cancelados</div></div>
+        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--primary);">$1,595</div><div style="font-size:11px;color:var(--g-500);">Facturado</div></div>
+        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--success);">&#x2713;</div><div style="font-size:11px;color:var(--g-500);">Al dia</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:16px;">&#x1F4CB; Mis contratos activos (1)</h3>
+      <div style="overflow-x:auto;">
+        <table class="contracts-table">
+          <thead><tr><th>Contrato</th><th>Fecha</th><th>Estado</th><th style="text-align:right;">Total</th><th style="text-align:right;">Saldo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>FACTU/2024/03/0001-1338</strong></td><td>15 mar. 2024</td><td><span class="badge-status badge-entregado">Entregado</span></td><td style="text-align:right;">$1,595.33</td><td style="text-align:right;">$1,089.51</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
   </div>
-  <div id="content" style="display:none;"></div>
+
+  <!-- Login prompt (visible solo en latinbien.com si no hay sesion) -->
+  <div id="loginContent" style="display:none;">
+    <div class="card text-center" style="padding:48px 24px;max-width:480px;margin:40px auto;">
+      <h2 style="font-size:24px;font-weight:800;color:var(--primary);margin-bottom:10px;">&#x1F510; Inicia sesion</h2>
+      <p style="font-size:14px;color:var(--g-600);margin-bottom:20px;">Accede con tu cuenta de LatinBien para ver el estado de tu membresia.</p>
+      <a href="/web/login?redirect=/mi-membresia.html" class="btn btn-primary btn-block">Iniciar Sesion</a>
+    </div>
+  </div>
+
 </div>
 
 <div class="footer">
@@ -143,415 +177,18 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 </div>
 
 <script>
-// ===== ODOO JSON-RPC CLIENT =====
-async function odooCall(model, method, args, kwargs) {
-  const resp = await fetch('/web/dataset/call_kw/' + model + '/' + method, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      jsonrpc: '2.0', method: 'call',
-      params: { model, method, args: args || [], kwargs: kwargs || {} },
-      id: 'mm_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5)
-    })
-  });
-  const data = await resp.json();
-  if (data.error) throw new Error(data.error.data?.message || 'Error Odoo');
-  return data.result;
-}
+(function() {
+  // Solo en latinbien.com: ocultar demo y mostrar login o datos reales
+  var host = window.location.hostname;
+  var isLive = host === 'latinbien.com' || host === 'www.latinbien.com';
 
-// ===== POINTS & TIER CALCULATION =====
-function calcPointsAndTier(contracts, contractsCount, totalBilling, hasOverdue, overdueCount) {
-  // Puntos por contrato activo (status 4 o 6): 10 pts c/u
-  let points = contractsCount * 10;
-
-  // Puntos por facturación: 5 pts por cada $1,000
-  points += Math.floor(totalBilling / 1000) * 5;
-
-  // Bono por pagos al día: 15 pts
-  if (!hasOverdue) points += 15;
-
-  // Penalización por cancelaciones (status 8): -5 pts c/u
-
-  // Determinar rango
-  let tier = null, name, icon, colorClass, label, message, nextStep;
-
-  if (hasOverdue) {
-    tier = null; name = 'Suspendido'; icon = '🚫'; colorClass = 'suspendido';
-    label = 'Membresía suspendida';
-    message = 'Tienes cuotas vencidas. Regulariza tu deuda para reactivar tu membresía.';
-    nextStep = 'Ir a Mi Cuenta';
-  } else if (points >= 60) {
-    tier = 'vip'; name = 'VIP'; icon = '💎'; colorClass = 'vip';
-    label = 'Membresía VIP';
-    message = 'Acceso completo a todos los beneficios, eventos exclusivos y crédito premium.';
-    nextStep = 'Ir a Mi Cuenta';
-  } else if (points >= 40) {
-    tier = 'media'; name = 'Media'; icon = '🥈'; colorClass = 'media';
-    label = 'Membresía Media';
-    message = 'Descuentos en comercios, envío prioritario y soporte dedicado.';
-    nextStep = 'Ir a Mi Cuenta';
-  } else if (points >= 20) {
-    tier = 'basica'; name = 'Básica'; icon = '🥉'; colorClass = 'basica';
-    label = 'Membresía Básica';
-    message = 'Acceso a línea de crédito básica con inicial desde 50%.';
-    nextStep = 'Ir a Mi Cuenta';
-  } else {
-    tier = null; name = 'Sin rango'; icon = '🔘'; colorClass = 'empty';
-    label = 'Aún sin rango';
-    message = 'Sigue acumulando contratos y facturación para obtener tu rango.';
-    nextStep = 'Ver comercios';
+  if (isLive) {
+    document.getElementById('demoContent').style.display = 'none';
+    document.getElementById('loginContent').style.display = 'block';
+    // Aqui iria la logica para detectar sesion y mostrar datos reales
   }
-
-  // Calcular progreso al siguiente nivel
-  const nextLevel = getNextLevel(points, hasOverdue);
-  const progress = nextLevel ? { current: points, needed: nextLevel.minPoints, next: nextLevel } : null;
-
-  return { tier, name, icon, colorClass, label, message, nextStep, points, progress, contracts: contracts || [] };
-}
-
-function getNextLevel(currentPoints, hasOverdue) {
-  if (hasOverdue) return null;
-  const levels = [
-    { minPoints: 20, name: 'Básica', icon: '🥉', contracts: '4', billing: '$3,000' },
-    { minPoints: 40, name: 'Media', icon: '🥈', contracts: '8', billing: '$3,001-$6,000' },
-    { minPoints: 60, name: 'VIP', icon: '💎', contracts: '8+', billing: '$6,000+' },
-  ];
-  for (const l of levels) {
-    if (currentPoints < l.minPoints) return l;
-  }
-  return null; // Already max level
-}
-
-// ===== FETCH CONTRACT DATA =====
-async function fetchContractData(partnerId) {
-  try {
-    let domain = [
-      ['partner_id', '=', partnerId],
-      ['move_type', '=', 'out_invoice'],
-    ];
-    const allIds = await odooCall('account.move', 'search', [domain]);
-
-    if (!allIds || allIds.length === 0) {
-      return { contractCount: 0, totalBilling: 0, totalPaid: 0, totalPending: 0, hasOverduePayments: false, overdueCount: 0, contracts: [] };
-    }
-
-    // Leer en lotes
-    const fields = ['id', 'name', 'amount_total', 'amount_residual', 'invoice_date', 'x_status_operativos'];
-    let contracts = [];
-    for (let i = 0; i < allIds.length; i += 200) {
-      const batch = allIds.slice(i, i + 200);
-      const recs = await odooCall('account.move', 'read', [batch, fields]);
-      contracts = contracts.concat(recs);
-    }
-
-    // Separar activos (status 4=aprobado, 6=entregado) y cancelados (8)
-    const activeContracts = contracts.filter(c => c.x_status_operativos && ['4','6'].includes(String(c.x_status_operativos)));
-    const cancelledContracts = contracts.filter(c => c.x_status_operativos && String(c.x_status_operativos) === '8');
-
-    let totalBilling = 0, totalPaid = 0, totalPending = 0;
-    activeContracts.forEach(c => {
-      totalBilling += c.amount_total || 0;
-      totalPaid += (c.amount_total || 0) - (c.amount_residual || 0);
-      totalPending += c.amount_residual || 0;
-    });
-
-    // Verificar cuotas vencidas
-    let hasOverdue = false;
-    let overdueCount = 0;
-    try {
-      const overdueDomain = [
-        ['invoice_id', 'in', allIds],
-        ['state', '=', 'vencido']
-      ];
-      const overdueIds = await odooCall('invoice.installment.line', 'search', [overdueDomain]);
-      overdueCount = overdueIds ? overdueIds.length : 0;
-      hasOverdue = overdueCount > 0;
-    } catch(e) {
-      console.log('No se pudo verificar cuotas vencidas (modelo puede no existir)');
-    }
-
-    return {
-      contractCount: activeContracts.length,
-      totalBilling: Math.round(totalBilling * 100) / 100,
-      totalPaid: Math.round(totalPaid * 100) / 100,
-      totalPending: Math.round(totalPending * 100) / 100,
-      hasOverduePayments: hasOverdue,
-      overdueCount: overdueCount,
-      contracts: activeContracts,
-      allContractCount: allIds.length,
-      cancelledCount: cancelledContracts.length
-    };
-  } catch(e) {
-    console.warn('Error consultando datos', e);
-    return null;
-  }
-}
-
-// ===== RENDER =====
-function renderDashboard(info) {
-  const loading = document.getElementById('loading');
-  const content = document.getElementById('content');
-
-  const pts = info.points;
-  const isSuspended = info.name === 'Suspendido';
-  const contracts = info.contracts || [];
-  const hasData = contracts.length > 0 || info.contractCount > 0;
-
-  let progressHtml = '';
-  if (info.progress && !isSuspended) {
-    const pct = Math.min(100, Math.round((info.progress.current / info.progress.needed) * 100));
-    const remaining = info.progress.needed - info.progress.current;
-    const next = info.progress.next;
-    progressHtml = `
-      <div class="progress-section">
-        <h4><span>Progreso a <strong>${next.icon} ${next.name}</strong></span> <span>${info.progress.current}/${info.progress.needed} pts</span></h4>
-        <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
-        <div class="progress-labels">
-          <span>Actual: ${info.name}</span>
-          <span style="font-weight:700;">${pct}%</span>
-          <span>Siguiente: ${next.name}</span>
-        </div>
-        <div class="progress-next">
-          💡 Te faltan <strong>${remaining} puntos</strong> para alcanzar el rango <strong>${next.icon} ${next.name}</strong>.
-          Sigue acumulando contratos activos y facturación para subir de nivel.
-        </div>
-      </div>`;
-  } else if (isSuspended) {
-    progressHtml = `
-      <div class="status-bar status-warn">
-        <span class="dot"></span>
-        <span>Tienes <strong>${info.overdueCount} cuotas vencidas</strong>. Tu membresía está suspendida hasta que regularices tus pagos. <a href="/my" style="color:var(--danger);font-weight:600;">Ir a pagar →</a>
-      </div>`;
-  } else {
-    const next = getNextLevel(pts, false);
-    if (next) {
-      const needed = next.minPoints - pts;
-      progressHtml = `
-        <div class="progress-section">
-          <h4><span>Meta: <strong>${next.icon} ${next.name}</strong></span> <span>${pts}/${next.minPoints} pts</span></h4>
-          <div class="progress-bar"><div class="progress-fill" style="width:${Math.min(100, Math.round((pts/next.minPoints)*100))}%"></div></div>
-          <div class="progress-labels">
-            <span>${info.name}</span>
-            <span>${next.name}</span>
-          </div>
-          <div class="next-level">
-            <h4>🎯 ¿Cómo llegar a ${next.name}?</h4>
-            <p>Necesitas <strong>${needed} puntos más</strong>. Acumula puntos así:</p>
-            <div class="steps">
-              <span class="step">📄 10 pts por contrato activo</span>
-              <span class="step">💰 5 pts por cada $1,000 facturados</span>
-              <span class="step">✅ 15 pts por estar al día</span>
-            </div>
-          </div>
-        </div>`;
-    } else {
-      progressHtml = `<div class="progress-next">🏆 ¡Felicidades! Has alcanzado el nivel máximo.</div>`;
-    }
-  }
-
-  // Tabla de contratos
-  let contractsHtml = '';
-  if (contracts.length > 0) {
-    const rows = contracts.map(c => {
-      const statusMap = { '4': 'Aprobado', '6': 'Entregado', '8': 'Cancelado' };
-      const s = String(c.x_status_operativos || '');
-      const statusLabel = statusMap[s] || s;
-      const statusClass = s === '6' ? 'entregado' : s === '4' ? 'aprobado' : s === '8' ? 'cancelado' : '';
-      const date = c.invoice_date ? new Date(c.invoice_date).toLocaleDateString('es-ES', { year:'numeric', month:'short', day:'numeric' }) : '-';
-      return `<tr>
-        <td><strong>${c.name || '-'}</strong></td>
-        <td>${date}</td>
-        <td><span class="badge-status badge-${statusClass}">${statusLabel}</span></td>
-        <td style="text-align:right;">$${(c.amount_total || 0).toLocaleString('en-US', {minimumFractionDigits:2})}</td>
-        <td style="text-align:right;">$${(c.amount_residual || 0).toLocaleString('en-US', {minimumFractionDigits:2})}</td>
-      </tr>`;
-    }).join('');
-
-    contractsHtml = `
-      <div class="card">
-        <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:16px;">📋 Mis contratos activos (${contracts.length})</h3>
-        <div style="overflow-x:auto;">
-          <table class="contracts-table">
-            <thead><tr>
-              <th>Contrato</th><th>Fecha</th><th>Estado</th><th style="text-align:right;">Total</th><th style="text-align:right;">Saldo</th>
-            </tr></thead>
-            <tbody>${rows}</tbody>
-          </table>
-        </div>
-      </div>`;
-  }
-
-  // Info adicional
-  let extraHtml = '';
-  if (info.allContractCount !== undefined) {
-    extraHtml = `
-      <div class="card">
-        <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:12px;">📊 Resumen</h3>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;">
-          <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);">
-            <div style="font-size:20px;font-weight:800;color:var(--primary);">${info.contractCount}</div>
-            <div style="font-size:11px;color:var(--g-500);">Activos</div>
-          </div>
-          <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);">
-            <div style="font-size:20px;font-weight:800;color:var(--g-600);">${info.cancelledCount || 0}</div>
-            <div style="font-size:11px;color:var(--g-500);">Cancelados</div>
-          </div>
-          <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);">
-            <div style="font-size:20px;font-weight:800;color:var(--primary);">$${(info.totalBilling || 0).toLocaleString('en-US',{minimumFractionDigits:0})}</div>
-            <div style="font-size:11px;color:var(--g-500);">Facturado</div>
-          </div>
-          <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);">
-            <div style="font-size:20px;font-weight:800;color:${info.hasOverduePayments ? 'var(--danger)' : 'var(--success)'};">${info.hasOverduePayments ? info.overdueCount : '✓'}</div>
-            <div style="font-size:11px;color:var(--g-500);">${info.hasOverduePayments ? 'Vencidas' : 'Al día'}</div>
-          </div>
-        </div>
-      </div>`;
-  }
-
-  content.innerHTML = `
-    <div style="padding:24px 0;">
-      ${!hasData ? '<div class="card text-center" style="padding:40px;"><p style="font-size:15px;color:var(--g-600);margin-bottom:12px;">Aún no tienes contratos activos.</p><p style="font-size:13px;color:var(--g-500);">Cuando adquieras un vehículo con LatinBien, aquí verás el progreso de tu membresía.</p><a href="/" style="margin-top:16px;display:inline-block;" class="btn btn-primary">Ir a LatinBien</a></div>' : `
-      <div class="tier-card">
-        <div class="tier-head">
-          <div class="th-left">
-            <div class="th-icon ${info.colorClass}">${info.icon}</div>
-            <div class="th-info">
-              <h2>${info.label}</h2>
-              <span>${info.points} puntos acumulados</span>
-            </div>
-          </div>
-          <span class="th-badge th-badge-${info.colorClass}">${info.icon} ${info.name}</span>
-        </div>
-        <div class="tier-body">
-          <div class="tier-points">
-            <div class="tier-point highlight">
-              <div class="tp-val">${info.points}</div>
-              <div class="tp-lbl">Puntos totales</div>
-            </div>
-            <div class="tier-point">
-              <div class="tp-val">${info.contractCount}</div>
-              <div class="tp-lbl">Contratos activos</div>
-              <div class="tp-sub">10 pts c/u</div>
-            </div>
-            <div class="tier-point">
-              <div class="tp-val">$${(info.totalBilling || 0).toLocaleString('en-US',{minimumFractionDigits:0})}</div>
-              <div class="tp-lbl">Facturado total</div>
-              <div class="tp-sub">5 pts / $1,000</div>
-            </div>
-            <div class="tier-point">
-              <div class="tp-val">${info.hasOverduePayments ? info.overdueCount : '✓'}</div>
-              <div class="tp-lbl">${info.hasOverduePayments ? 'Cuotas vencidas' : 'Al día'}</div>
-              <div class="tp-sub">${info.hasOverduePayments ? '- Sin bono' : '+15 pts bono'}</div>
-            </div>
-          </div>
-
-          ${!isSuspended && info.hasOverduePayments ? `
-            <div class="status-bar status-warn">
-              <span class="dot"></span>
-              <span>Tienes cuotas vencidas. Regulariza para recuperar tu rango.</span>
-            </div>` : ''}
-
-          ${progressHtml}
-        </div>
-      </div>
-
-      ${extraHtml}
-      ${contractsHtml}
-      `}
-    </div>`;
-
-  loading.style.display = 'none';
-  content.style.display = 'block';
-
-  // Animaciones
-  document.querySelectorAll('.fade-in').forEach(el => setTimeout(() => el.classList.add('visible'), 100));
-}
-
-// ===== DEMO DATA (para vista local file://) =====
-const DEMO_DATA = {
-  contractCount: 1,
-  totalBilling: 1595.33,
-  totalPaid: 505.82,
-  totalPending: 1089.51,
-  hasOverduePayments: false,
-  overdueCount: 0,
-  contracts: [
-    { id: 1338, name: 'FACTU/2024/03/0001-1338', amount_total: 1595.33, amount_residual: 1089.51, invoice_date: '2024-03-15', x_status_operativos: 6 }
-  ],
-  allContractCount: 1,
-  cancelledCount: 0
-};
-
-// ===== MAIN =====
-async function init() {
-  const isLocal = window.location.protocol === 'file:';
-  const isExternal = window.location.hostname !== 'latinbien.com' && window.location.hostname !== 'www.latinbien.com';
-
-  // Modo demo: cuando es file:// O cuando NO estamos en latinbien.com (GitHub Pages, etc.)
-  if (isLocal || isExternal) {
-    document.getElementById('loading').style.display = 'none';
-    const info = calcPointsAndTier(
-      DEMO_DATA.contracts,
-      DEMO_DATA.contractCount,
-      DEMO_DATA.totalBilling,
-      DEMO_DATA.hasOverduePayments,
-      DEMO_DATA.overdueCount
-    );
-    // Agregar datos extra
-    Object.assign(info, DEMO_DATA);
-    renderDashboard(info);
-    return;
-  }
-
-  // Intentar detectar sesión Odoo
-  try {
-    const resp = await fetch('/web/session/get_session_info', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ jsonrpc: '2.0', method: 'call', params: {}, id: 'mm_session_' + Date.now() })
-    });
-    const data = await resp.json();
-
-    if (data.result && data.result.uid) {
-      const s = data.result;
-      const isPublic = !s.username || s.username === '' || s.username === 'public' || s.share === true;
-
-      if (!isPublic && s.partner_id && s.partner_id[0]) {
-        // Usuario autenticado
-        const partnerId = s.partner_id[0];
-        const contractData = await fetchContractData(partnerId);
-
-        if (contractData) {
-          const info = calcPointsAndTier(
-            contractData.contracts,
-            contractData.contractCount,
-            contractData.totalBilling,
-            contractData.hasOverduePayments,
-            contractData.overdueCount
-          );
-          Object.assign(info, contractData);
-          renderDashboard(info);
-          return;
-        }
-      }
-    }
-  } catch(e) {
-    console.log('No se pudo verificar sesión', e);
-  }
-
-  // No autenticado o error: mostrar pantalla de login
-  document.getElementById('loading').style.display = 'none';
-  document.getElementById('content').innerHTML = `
-    <div class="login-prompt">
-      <h2>🔐 Inicia sesión</h2>
-      <p>Accede con tu cuenta de LatinBien para ver el estado de tu membresía, tus puntos y tu progreso.</p>
-      <a href="/web/login?redirect=/mi-membresia.html" class="btn btn-primary btn-block">Iniciar Sesión</a>
-      <p style="font-size:12px;color:var(--g-500);margin-top:16px;">¿No tienes cuenta? <a href="/web/signup" style="color:var(--accent);font-weight:600;">Regístrate</a></p>
-    </div>`;
-  document.getElementById('content').style.display = 'block';
-}
-
-init();
+  // En GitHub Pages o file://: se queda el contenido demo visible
+})();
 </script>
 </body>
 </html>

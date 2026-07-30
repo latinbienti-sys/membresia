@@ -3,26 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Membresías - LatinBien</title>
+<title>Admin Membresias - LatinBien</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="icon" href="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" type="image/png">
 <style>
-:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-light:#3D6194;--primary-ultra:#e8edf5;--accent:#F98B10;--accent-light:#fff3e0;--accent-dark:#e07d00;--gold:#D4A017;--silver:#8E9EAB;--bronze:#CD7F32;--success:#10b981;--danger:#ef4444;--dark:#1a1a2e;--g-100:#f8f9fa;--g-200:#e9ecef;--g-300:#dee2e6;--g-400:#ced4da;--g-500:#adb5bd;--g-600:#6c757d;--g-700:#495057;--white:#fff;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--r:12px;--r-lg:20px;--t:all 0.3s cubic-bezier(0.4,0,0.2,1)}
+:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-ultra:#e8edf5;--accent:#F98B10;--accent-light:#fff3e0;--accent-dark:#e07d00;--gold:#D4A017;--silver:#8E9EAB;--bronze:#CD7F32;--success:#10b981;--danger:#ef4444;--dark:#1a1a2e;--g-100:#f8f9fa;--g-200:#e9ecef;--g-300:#dee2e6;--g-500:#adb5bd;--g-600:#6c757d;--g-700:#495057;--white:#fff;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--r:12px;--r-lg:20px;--t:all 0.3s cubic-bezier(0.4,0,0.2,1)}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--dark);background:var(--g-100);line-height:1.6;-webkit-font-smoothing:antialiased}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:10px;font-size:13px;font-weight:600;text-decoration:none;border:none;cursor:pointer;font-family:inherit;transition:var(--t)}
-.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}.btn-outline:hover{background:var(--primary);color:#fff}
-.btn-sm{padding:8px 16px;font-size:12px}
 .card{background:#fff;border-radius:var(--r-lg);padding:24px;box-shadow:var(--shadow);margin-bottom:20px;border:1px solid var(--g-200)}
 .text-center{text-align:center}
-.fade-in{opacity:0;transform:translateY(16px);transition:opacity 0.4s ease,transform 0.4s ease}
-.fade-in.visible{opacity:1;transform:translateY(0)}
-
-/* Navbar */
 .navbar{background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--g-200);position:sticky;top:0;z-index:100}
 .navbar .container{display:flex;align-items:center;justify-content:space-between;height:64px}
 .navbar .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -30,21 +22,11 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 .navbar .logo span{font-size:18px;font-weight:800;color:var(--primary);letter-spacing:-0.5px}
 .navbar .logo span .accent-c{color:var(--accent)}
 .navbar .right{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--g-600)}
-.navbar .right .admin-badge{background:var(--primary-ultra);color:var(--primary);padding:3px 12px;border-radius:100px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-
-/* Header */
 .page-header{background:linear-gradient(135deg,var(--primary) 0%,#0f2250 100%);padding:40px 0 32px;position:relative}
 .page-header h1{font-size:clamp(22px,3.5vw,32px);font-weight:900;color:#fff;margin-bottom:6px}
 .page-header p{font-size:14px;color:rgba(255,255,255,0.7)}
 .page-header .header-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,139,16,0.15);color:var(--accent);padding:4px 14px;border-radius:100px;font-size:11px;font-weight:600;margin-bottom:12px;border:1px solid rgba(249,139,16,0.2)}
-
-/* Loading */
-.loading{text-align:center;padding:60px 20px;color:var(--g-500)}
-.loading .spinner{width:40px;height:40px;border:3px solid var(--g-200);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* Stats grid */
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:24px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px}
 .stat-card{background:#fff;border-radius:var(--r-lg);padding:22px;box-shadow:var(--shadow);border:1px solid var(--g-200);text-align:center;transition:var(--t)}
 .stat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
 .stat-card .sc-icon{font-size:28px;margin-bottom:8px}
@@ -52,59 +34,36 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 .stat-card .sc-lbl{font-size:12px;color:var(--g-500);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
 .stat-card .sc-sub{font-size:11px;color:var(--g-400);margin-top:2px}
 .stat-card.sc-accent .sc-val{color:var(--accent)}
-.stat-card.sc-success .sc-val{color:var(--success)}
 .stat-card.sc-danger .sc-val{color:var(--danger)}
-
-/* Breakdown table */
 .breakdown-table{width:100%;border-collapse:collapse;font-size:13px}
 .breakdown-table th{padding:10px 14px;background:var(--g-100);color:var(--g-600);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px;text-align:left;border-bottom:2px solid var(--g-200)}
 .breakdown-table td{padding:10px 14px;border-bottom:1px solid var(--g-100);color:var(--g-700)}
 .breakdown-table tr:hover td{background:var(--g-100)}
-.breakdown-table .td-bar{height:6px;border-radius:100px;background:var(--g-200);overflow:hidden;max-width:200px}
-.breakdown-table .td-bar .fill{height:100%;border-radius:100px;transition:width .6s ease}
+.td-bar{height:6px;border-radius:100px;background:var(--g-200);overflow:hidden;max-width:200px}
+.td-bar .fill{height:100%;border-radius:100px}
 .bar-vip .fill{background:var(--primary)}.bar-media .fill{background:var(--silver)}.bar-basica .fill{background:var(--bronze)}.bar-empty .fill{background:var(--g-400)}.bar-suspendido .fill{background:var(--danger)}
+.footer{text-align:center;padding:32px 0;font-size:12px;color:var(--g-500);border-top:1px solid var(--g-200);margin-top:40px}
+.live-only{display:none}
 
-/* Row per client */
-.client-list{max-height:500px;overflow-y:auto;margin-top:8px}
-.client-row{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--g-100);font-size:13px;transition:var(--t)}
+/* Filtros */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.filter-btn{padding:6px 14px;border-radius:100px;font-size:11px;font-weight:600;border:1px solid var(--g-300);background:#fff;cursor:pointer;transition:var(--t);font-family:inherit}
+.filter-btn:hover{border-color:var(--accent);color:var(--accent)}
+.filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.client-row{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-bottom:1px solid var(--g-100);font-size:13px;transition:var(--t);cursor:default}
 .client-row:hover{background:var(--g-100);border-radius:var(--r)}
-.client-row .cr-name{font-weight:600;color:var(--primary)}
+.client-row .cr-name{font-weight:600;color:var(--primary);flex:1}
 .client-row .cr-name small{font-weight:400;color:var(--g-500);font-size:11px}
-.client-row .cr-points{font-weight:700}
-.client-row .cr-tier{display:inline-flex;align-items:center;gap:4px;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.3px}
+.client-row .cr-points{font-weight:700;margin:0 12px}
+.client-row .cr-tier{display:inline-flex;align-items:center;gap:4px;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
 .cr-tier-vip{background:var(--primary-ultra);color:var(--primary)}
 .cr-tier-media{background:#e9ecef;color:#4a5568}
 .cr-tier-basica{background:var(--accent-light);color:var(--bronze)}
 .cr-tier-empty{background:var(--g-100);color:var(--g-500)}
 .cr-tier-suspendido{background:#fff0f0;color:var(--danger)}
-
-/* Tier pie (simple bars) */
-.tier-breakdown{margin-bottom:24px}
-
-/* Filters */
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;align-items:center}
-.filters .filter-btn{padding:7px 18px;border-radius:100px;font-size:12px;font-weight:600;border:1px solid var(--g-300);background:#fff;cursor:pointer;transition:var(--t);font-family:inherit}
-.filters .filter-btn:hover{border-color:var(--accent);color:var(--accent)}
-.filters .filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-
-/* Access denied */
-.access-denied{max-width:480px;margin:60px auto;text-align:center;padding:48px 24px;background:#fff;border-radius:var(--r-lg);box-shadow:var(--shadow-lg)}
-.access-denied h2{font-size:24px;font-weight:800;color:var(--primary);margin-bottom:10px}
-.access-denied p{font-size:14px;color:var(--g-600);margin-bottom:20px}
-
-/* Footer */
-.footer{text-align:center;padding:32px 0;font-size:12px;color:var(--g-500);border-top:1px solid var(--g-200);margin-top:40px}
-
-.refresh-btn{cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--g-100);border:1px solid var(--g-300);border-radius:var(--r);font-size:12px;font-weight:600;color:var(--g-700);transition:var(--t);font-family:inherit}
-.refresh-btn:hover{background:var(--g-200)}
-
-@media(max-width:768px){
-  .stats-grid{grid-template-columns:1fr 1fr}
-  .container{padding:0 16px}
-}
-@media(max-width:480px){
-  .stats-grid{grid-template-columns:1fr}
-}
+.client-row .cr-meta{font-size:11px;color:var(--g-400);margin-left:12px;white-space:nowrap}
+@media(max-width:768px){.stats-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.stats-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -117,8 +76,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
       <span>Latin<span class="accent-c">Bien</span></span>
     </a>
     <div class="right">
-      <span class="admin-badge">🔒 Admin</span>
-      <span id="adminName" style="font-weight:600;">—</span>
+      <span style="background:var(--primary-ultra);color:var(--primary);padding:2px 10px;border-radius:100px;font-size:10px;font-weight:700;text-transform:uppercase;">Admin</span>
       <a href="/my" style="color:var(--g-600);text-decoration:none;">Salir</a>
     </div>
   </div>
@@ -126,386 +84,110 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 
 <div class="page-header">
   <div class="container">
-    <div class="header-badge">📊 Panel de Administración</div>
-    <h1>Dashboard de Membresías</h1>
-    <p>Visualiza la clasificación de todos los clientes por rango, puntos acumulados y estado de pago.</p>
+    <div class="header-badge">&#x1F4CA; Panel de Administracion</div>
+    <h1>Dashboard de Membresias</h1>
+    <p>Visualiza la clasificacion de todos los clientes por rango, puntos acumulados y estado de pago.</p>
   </div>
 </div>
 
-<div class="container" id="app">
-  <div class="loading" id="loading">
-    <div class="spinner"></div>
-    <p>Cargando datos de todos los clientes...</p>
+<div class="container" style="padding:24px 0;">
+
+  <!-- Demo content -->
+  <div id="demoContent">
+
+    <h2 style="font-size:18px;font-weight:700;color:var(--primary);margin-bottom:16px;">&#x1F4C8; Clientes por rango</h2>
+
+    <div class="stats-grid">
+      <div class="stat-card sc-accent"><div class="sc-icon">&#x1F48E;</div><div class="sc-val">1</div><div class="sc-lbl">VIP</div><div class="sc-sub">27 contratos - $37,000</div></div>
+      <div class="stat-card"><div class="sc-icon">&#x1F948;</div><div class="sc-val">2</div><div class="sc-lbl">Media</div><div class="sc-sub">13 contratos - $10,000</div></div>
+      <div class="stat-card"><div class="sc-icon">&#x1F949;</div><div class="sc-val">3</div><div class="sc-lbl">Basica</div><div class="sc-sub">12 contratos - $9,550</div></div>
+      <div class="stat-card"><div class="sc-icon">&#x1F538;</div><div class="sc-val">4</div><div class="sc-lbl">Sin rango</div><div class="sc-sub">7 contratos - $6,645</div></div>
+      <div class="stat-card sc-danger"><div class="sc-icon">&#x1F6AB;</div><div class="sc-val">2</div><div class="sc-lbl">Suspendido</div><div class="sc-sub">5 contratos - $6,700</div></div>
+      <div class="stat-card sc-accent"><div class="sc-icon">&#x1F4CA;</div><div class="sc-val">12</div><div class="sc-lbl">Total clientes</div><div class="sc-sub">64 contratos - $69,895</div></div>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:16px;">&#x1F4CB; Desglose por rango</h3>
+      <table class="breakdown-table">
+        <thead><tr><th>Rango</th><th>Clientes</th><th></th><th style="text-align:right;">%</th><th style="text-align:right;">Facturacion</th><th style="text-align:right;">Contratos</th></tr></thead>
+        <tbody>
+          <tr><td>&#x1F48E; <strong>VIP</strong></td><td style="font-weight:700;">1</td><td><div class="td-bar bar-vip"><div class="fill" style="width:100%"></div></div></td><td style="text-align:right;">8%</td><td style="text-align:right;">$37,000</td><td style="text-align:right;">27</td></tr>
+          <tr><td>&#x1F948; <strong>Media</strong></td><td style="font-weight:700;">2</td><td><div class="td-bar bar-media"><div class="fill" style="width:67%"></div></div></td><td style="text-align:right;">17%</td><td style="text-align:right;">$10,000</td><td style="text-align:right;">13</td></tr>
+          <tr><td>&#x1F949; <strong>Basica</strong></td><td style="font-weight:700;">3</td><td><div class="td-bar bar-basica"><div class="fill" style="width:50%"></div></div></td><td style="text-align:right;">25%</td><td style="text-align:right;">$9,550</td><td style="text-align:right;">12</td></tr>
+          <tr><td>&#x1F538; <strong>Sin rango</strong></td><td style="font-weight:700;">4</td><td><div class="td-bar bar-empty"><div class="fill" style="width:33%"></div></div></td><td style="text-align:right;">33%</td><td style="text-align:right;">$6,645</td><td style="text-align:right;">7</td></tr>
+          <tr><td>&#x1F6AB; <strong>Suspendido</strong></td><td style="font-weight:700;">2</td><td><div class="td-bar bar-suspendido"><div class="fill" style="width:50%"></div></div></td><td style="text-align:right;">17%</td><td style="text-align:right;">$6,700</td><td style="text-align:right;">5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px;">
+        <h3 style="font-size:15px;font-weight:700;color:var(--primary);">&#x1F465; Clientes</h3>
+        <div class="filters">
+          <button class="filter-btn active" onclick="filtrar('todos')">Todos</button>
+          <button class="filter-btn" onclick="filtrar('vip')">&#x1F48E; VIP</button>
+          <button class="filter-btn" onclick="filtrar('media')">&#x1F948; Media</button>
+          <button class="filter-btn" onclick="filtrar('basica')">&#x1F949; Basica</button>
+          <button class="filter-btn" onclick="filtrar('sin-rango')">&#x1F538; Sin rango</button>
+          <button class="filter-btn" onclick="filtrar('suspendido')">&#x1F6AB; Suspendido</button>
+        </div>
+      </div>
+      <div id="clientList">
+        <div class="client-row" data-tier="vip"><span class="cr-name">Jose Contreras <small>#6</small></span><span class="cr-points" style="color:var(--primary);">75 pts</span><span class="cr-tier cr-tier-vip">&#x1F48E; VIP</span><span class="cr-meta">15 ctos - $22,000</span></div>
+        <div class="client-row" data-tier="vip"><span class="cr-name">Andres Mendoza <small>#10</small></span><span class="cr-points" style="color:var(--primary);">70 pts</span><span class="cr-tier cr-tier-vip">&#x1F48E; VIP</span><span class="cr-meta">12 ctos - $15,000</span></div>
+        <div class="client-row" data-tier="media"><span class="cr-name">Maria Escalona <small>#1</small></span><span class="cr-points" style="color:var(--primary);">50 pts</span><span class="cr-tier cr-tier-media">&#x1F948; Media</span><span class="cr-meta">5 ctos - $4,850</span></div>
+        <div class="client-row" data-tier="media"><span class="cr-name">Carmen Diaz <small>#5</small></span><span class="cr-points" style="color:var(--primary);">55 pts</span><span class="cr-tier cr-tier-media">&#x1F948; Media</span><span class="cr-meta">7 ctos - $5,800</span></div>
+        <div class="client-row" data-tier="media"><span class="cr-name">Valentina Rojas <small>#9</small></span><span class="cr-points" style="color:var(--primary);">50 pts</span><span class="cr-tier cr-tier-media">&#x1F948; Media</span><span class="cr-meta">6 ctos - $4,200</span></div>
+        <div class="client-row" data-tier="basica"><span class="cr-name">Yarley Carmona <small>#12</small></span><span class="cr-points" style="color:var(--primary);">30 pts</span><span class="cr-tier cr-tier-basica">&#x1F949; Basica</span><span class="cr-meta">1 ctos - $1,595</span></div>
+        <div class="client-row" data-tier="basica"><span class="cr-name">Ana Cedeno <small>#3</small></span><span class="cr-points" style="color:var(--primary);">25 pts</span><span class="cr-tier cr-tier-basica">&#x1F949; Basica</span><span class="cr-meta">2 ctos - $1,800</span></div>
+        <div class="client-row" data-tier="basica"><span class="cr-name">Sofia Mora <small>#7</small></span><span class="cr-points" style="color:var(--primary);">20 pts</span><span class="cr-tier cr-tier-basica">&#x1F949; Basica</span><span class="cr-meta">3 ctos - $2,100</span></div>
+        <div class="client-row" data-tier="basica"><span class="cr-name">Laura Pena <small>#11</small></span><span class="cr-points" style="color:var(--primary);">-</span><span class="cr-tier cr-tier-suspendido">&#x1F6AB; Suspendido</span><span class="cr-meta">4 ctos - $3,500</span></div>
+        <div class="client-row" data-tier="sin-rango"><span class="cr-name">Pedro Rivas <small>#2</small></span><span class="cr-points" style="color:var(--g-400);">15 pts</span><span class="cr-tier cr-tier-empty">&#x1F538; Sin rango</span><span class="cr-meta">2 ctos - $1,800</span></div>
+        <div class="client-row" data-tier="sin-rango"><span class="cr-name">Diego Ramirez <small>#8</small></span><span class="cr-points" style="color:var(--g-400);">15 pts</span><span class="cr-tier cr-tier-empty">&#x1F538; Sin rango</span><span class="cr-meta">1 ctos - $950</span></div>
+        <div class="client-row" data-tier="sin-rango"><span class="cr-name">Luis Torres <small>#4</small></span><span class="cr-points" style="color:var(--g-400);">-</span><span class="cr-tier cr-tier-suspendido">&#x1F6AB; Suspendido</span><span class="cr-meta">2 ctos - $3,200</span></div>
+      </div>
+    </div>
+
   </div>
-  <div id="content" style="display:none;"></div>
+
+  <!-- Login content (visible solo en latinbien.com) -->
+  <div id="loginContent" style="display:none;">
+    <div class="card text-center" style="padding:48px 24px;max-width:480px;margin:40px auto;">
+      <h2 style="font-size:24px;font-weight:800;color:var(--primary);margin-bottom:10px;">&#x1F512; Acceso restringido</h2>
+      <p style="font-size:14px;color:var(--g-600);margin-bottom:20px;">Debes iniciar sesion con permisos de administrador.</p>
+      <a href="/web/login?redirect=/admin-membresia.html" class="btn btn-primary btn-block">Iniciar Sesion</a>
+    </div>
+  </div>
+
 </div>
 
 <div class="footer">
   <div class="container">
-    <p>&copy; 2026 LatinBien · Panel administrativo de membresías</p>
+    <p>&copy; 2026 LatinBien - Panel administrativo de membresias</p>
   </div>
 </div>
 
 <script>
-// ===== ODOO JSON-RPC CLIENT =====
-async function odooCall(model, method, args, kwargs) {
-  const resp = await fetch('/web/dataset/call_kw/' + model + '/' + method, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      jsonrpc: '2.0', method: 'call',
-      params: { model, method, args: args || [], kwargs: kwargs || {} },
-      id: 'am_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5)
-    })
-  });
-  const data = await resp.json();
-  if (data.error) throw new Error(data.error.data?.message || 'Error Odoo');
-  return data.result;
-}
-
-// ===== POINTS & TIER CALCULATION (misma fórmula que mi-membresia) =====
-function calcPointsAndTier(contractCount, totalBilling, hasOverdue, canceledCount) {
-  let points = contractCount * 10;
-  points += Math.floor(totalBilling / 1000) * 5;
-  if (!hasOverdue) points += 15;
-  points -= (canceledCount || 0) * 5;
-
-  let tier, name, icon, colorClass;
-  if (hasOverdue) {
-    tier = 'suspendido'; name = 'Suspendido'; icon = '🚫'; colorClass = 'suspendido';
-  } else if (points >= 60) {
-    tier = 'vip'; name = 'VIP'; icon = '💎'; colorClass = 'vip';
-  } else if (points >= 40) {
-    tier = 'media'; name = 'Media'; icon = '🥈'; colorClass = 'media';
-  } else if (points >= 20) {
-    tier = 'basica'; name = 'Básica'; icon = '🥉'; colorClass = 'basica';
-  } else {
-    tier = 'sin-rango'; name = 'Sin rango'; icon = '🔘'; colorClass = 'empty';
-  }
-  return { tier, name, icon, colorClass, points };
-}
-
-// ===== FETCH ALL CLIENTS DATA =====
-async function fetchAllClients() {
-  // Buscar todas las facturas de clientes con status operativos
-  const domain = [
-    ['x_status_operativos', 'in', ['4', '6', '8']],
-    ['move_type', '=', 'out_invoice'],
-  ];
-  const allIds = await odooCall('account.move', 'search', [domain]);
-  if (!allIds || allIds.length === 0) return [];
-
-  const fields = ['id', 'name', 'partner_id', 'amount_total', 'amount_residual', 'x_status_operativos'];
-  let allContracts = [];
-  for (let i = 0; i < allIds.length; i += 200) {
-    const batch = allIds.slice(i, i + 200);
-    const recs = await odooCall('account.move', 'read', [batch, fields]);
-    allContracts = allContracts.concat(recs);
-  }
-
-  // Agrupar por partner
-  const partnerMap = {};
-  for (const c of allContracts) {
-    const pid = c.partner_id && c.partner_id[0];
-    if (!pid) continue;
-    if (!partnerMap[pid]) {
-      partnerMap[pid] = { partnerId: pid, partnerName: c.partner_id[1] || 'Desconocido', contracts: [], canceledCount: 0 };
+function filtrar(tier) {
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  event.target.classList.add('active');
+  document.querySelectorAll('.client-row').forEach(function(row) {
+    if (tier === 'todos' || row.getAttribute('data-tier') === tier) {
+      row.style.display = 'flex';
+    } else {
+      row.style.display = 'none';
     }
-    const s = String(c.x_status_operativos || '');
-    if (s === '8') {
-      partnerMap[pid].canceledCount++;
-    } else if (s === '4' || s === '6') {
-      partnerMap[pid].contracts.push(c);
-    }
-  }
-
-  // Calcular métricas por partner
-  const clients = [];
-  for (const pid in partnerMap) {
-    const p = partnerMap[pid];
-    let totalBilling = 0;
-    for (const c of p.contracts) {
-      totalBilling += c.amount_total || 0;
-    }
-    clients.push({
-      partnerId: p.partnerId,
-      partnerName: p.partnerName,
-      contractCount: p.contracts.length,
-      totalBilling: Math.round(totalBilling * 100) / 100,
-      canceledCount: p.canceledCount,
-      hasOverduePayments: false, // Se verifica después
-      overdueCount: 0
-    });
-  }
-
-  // Verificar cuotas vencidas (en lotes)
-  try {
-    const allContractIds = allIds;
-    const overdueDomain = [['invoice_id', 'in', allContractIds], ['state', '=', 'vencido']];
-    const overdueIds = await odooCall('invoice.installment.line', 'search', [overdueDomain]);
-    if (overdueIds && overdueIds.length > 0) {
-      // Leer las cuotas vencidas para saber qué partner
-      const overdueFields = ['invoice_id', 'state'];
-      let overdueRecs = [];
-      for (let i = 0; i < overdueIds.length; i += 200) {
-        const batch = overdueIds.slice(i, i + 200);
-        const recs = await odooCall('invoice.installment.line', 'read', [batch, overdueFields]);
-        overdueRecs = overdueRecs.concat(recs);
-      }
-      // Mapear invoice_id a partner
-      const invoicePartnerMap = {};
-      for (const c of allContracts) {
-        if (c.id && c.partner_id) {
-          invoicePartnerMap[c.id] = c.partner_id[0];
-        }
-      }
-      for (const ol of overdueRecs) {
-        const invId = ol.invoice_id && (Array.isArray(ol.invoice_id) ? ol.invoice_id[0] : ol.invoice_id);
-        if (invId && invoicePartnerMap[invId]) {
-          const pid = invoicePartnerMap[invId];
-          const client = clients.find(c => c.partnerId === pid);
-          if (client) {
-            client.hasOverduePayments = true;
-            client.overdueCount = (client.overdueCount || 0) + 1;
-          }
-        }
-      }
-    }
-  } catch(e) {
-    console.log('No se pudieron verificar cuotas vencidas');
-  }
-
-  return clients;
-}
-
-// ===== DEMO DATA =====
-const DEMO_CLIENTS = [
-  { partnerId: 1, partnerName: 'María Escalona', contractCount: 5, totalBilling: 4850.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-  { partnerId: 2, partnerName: 'Pedro Rivas', contractCount: 10, totalBilling: 12500.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 1 },
-  { partnerId: 3, partnerName: 'Ana Cedeño', contractCount: 2, totalBilling: 1800.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-  { partnerId: 4, partnerName: 'Luis Torres', contractCount: 4, totalBilling: 3200.00, hasOverduePayments: true, overdueCount: 2, canceledCount: 0 },
-  { partnerId: 5, partnerName: 'Carmen Díaz', contractCount: 7, totalBilling: 5800.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-  { partnerId: 6, partnerName: 'José Contreras', contractCount: 12, totalBilling: 15000.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-  { partnerId: 7, partnerName: 'Sofía Mora', contractCount: 3, totalBilling: 2100.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 1 },
-  { partnerId: 8, partnerName: 'Diego Ramírez', contractCount: 1, totalBilling: 950.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-  { partnerId: 9, partnerName: 'Valentina Rojas', contractCount: 6, totalBilling: 4200.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-  { partnerId: 10, partnerName: 'Andrés Mendoza', contractCount: 15, totalBilling: 22000.00, hasOverduePayments: false, overdueCount: 0, canceledCount: 2 },
-  { partnerId: 11, partnerName: 'Laura Peña', contractCount: 4, totalBilling: 3500.00, hasOverduePayments: true, overdueCount: 1, canceledCount: 0 },
-  { partnerId: 12, partnerName: 'Yarley Carmona', contractCount: 1, totalBilling: 1595.33, hasOverduePayments: false, overdueCount: 0, canceledCount: 0 },
-];
-
-// ===== RENDER DASHBOARD =====
-let currentFilter = 'todos';
-let allClients = [];
-
-function renderAdminDashboard(clients) {
-  allClients = clients;
-  const loading = document.getElementById('loading');
-  const content = document.getElementById('content');
-
-  // Calcular tier para cada cliente
-  const withTier = clients.map(c => {
-    const info = calcPointsAndTier(c.contractCount, c.totalBilling, c.hasOverduePayments, c.canceledCount);
-    return { ...c, ...info };
-  });
-
-  // Estadísticas por tier
-  const tiers = ['vip', 'media', 'basica', 'sin-rango', 'suspendido'];
-  const tierNames = { vip: 'VIP', media: 'Media', basica: 'Básica', 'sin-rango': 'Sin rango', suspendido: 'Suspendido' };
-  const tierIcons = { vip: '💎', media: '🥈', basica: '🥉', 'sin-rango': '🔘', suspendido: '🚫' };
-  const tierColors = { vip: 'vip', media: 'media', basica: 'basica', 'sin-rango': 'empty', suspendido: 'suspendido' };
-
-  const stats = {};
-  let totalClients = withTier.length;
-  let totalBillingAll = 0;
-  let totalContractsAll = 0;
-
-  for (const t of tiers) {
-    const filtered = withTier.filter(c => c.tier === t);
-    const billing = filtered.reduce((s, c) => s + c.totalBilling, 0);
-    const contracts = filtered.reduce((s, c) => s + c.contractCount, 0);
-    stats[t] = { count: filtered.length, billing: Math.round(billing * 100) / 100, contracts };
-    totalBillingAll += billing;
-    totalContractsAll += contracts;
-  }
-
-  // Aplicar filtro
-  let filteredClients = withTier;
-  if (currentFilter !== 'todos') {
-    filteredClients = withTier.filter(c => c.tier === currentFilter);
-  }
-
-  // Stats cards
-  const maxCount = Math.max(...tiers.map(t => stats[t].count), 1);
-  const statsCards = tiers.map(t => `
-    <div class="stat-card ${t === 'suspendido' ? 'sc-danger' : (t === 'vip' || t === 'media' ? 'sc-accent' : '')} fade-in">
-      <div class="sc-icon">${tierIcons[t]}</div>
-      <div class="sc-val">${stats[t].count}</div>
-      <div class="sc-lbl">${tierNames[t]}</div>
-      <div class="sc-sub">${stats[t].contracts} contratos · $${stats[t].billing.toLocaleString('en-US',{minimumFractionDigits:0})}</div>
-    </div>
-  `).join('');
-
-  // Totales
-  const totalCard = `
-    <div class="stat-card sc-accent fade-in">
-      <div class="sc-icon">📊</div>
-      <div class="sc-val">${totalClients}</div>
-      <div class="sc-lbl">Total clientes</div>
-      <div class="sc-sub">${totalContractsAll} contratos · $${Math.round(totalBillingAll).toLocaleString('en-US',{minimumFractionDigits:0})} facturados</div>
-    </div>`;
-
-  // Tabla de desglose
-  const maxPct = Math.max(...tiers.map(t => totalClients > 0 ? Math.round((stats[t].count / totalClients) * 100) : 0), 1);
-  const breakdownRows = tiers.map(t => {
-    const pct = totalClients > 0 ? Math.round((stats[t].count / totalClients) * 100) : 0;
-    const barWidth = Math.round((pct / maxPct) * 100);
-    return `<tr>
-      <td>${tierIcons[t]} <strong>${tierNames[t]}</strong></td>
-      <td style="font-weight:700;">${stats[t].count}</td>
-      <td>
-        <div class="td-bar"><div class="fill bar-${tierColors[t]}" style="width:${barWidth}%"></div></div>
-      </td>
-      <td style="text-align:right;">${pct}%</td>
-      <td style="text-align:right;">$${stats[t].billing.toLocaleString('en-US',{minimumFractionDigits:0})}</td>
-      <td style="text-align:right;">${stats[t].contracts}</td>
-    </tr>`;
-  }).join('');
-
-  // Lista de clientes filtrada
-  const filterBtns = [
-    { id: 'todos', label: 'Todos' },
-    { id: 'basica', label: '🥉 Básica' },
-    { id: 'media', label: '🥈 Media' },
-    { id: 'vip', label: '💎 VIP' },
-    { id: 'sin-rango', label: '🔘 Sin rango' },
-    { id: 'suspendido', label: '🚫 Suspendido' },
-  ];
-  const filterHtml = filterBtns.map(f =>
-    `<button class="filter-btn ${currentFilter === f.id ? 'active' : ''}" onclick="setFilter('${f.id}')">${f.label}</button>`
-  ).join('');
-
-  const clientRows = filteredClients.map(c => {
-    const classCss = 'cr-tier-' + c.colorClass;
-    return `<div class="client-row fade-in">
-      <div class="cr-name">${c.partnerName} <small>#${c.partnerId}</small></div>
-      <div style="display:flex;align-items:center;gap:16px;">
-        <span class="cr-points" style="color:${c.points >= 20 ? 'var(--primary)' : 'var(--g-400)'};">${c.points} pts</span>
-        <span class="cr-tier ${classCss}">${c.icon} ${c.name}</span>
-        ${c.hasOverduePayments ? '<span style="color:var(--danger);font-size:11px;font-weight:600;">🚫 ${c.overdueCount} vencida(s)</span>' : ''}
-        <span style="font-size:11px;color:var(--g-400);">${c.contractCount} ctos · $${c.totalBilling.toLocaleString('en-US',{minimumFractionDigits:0})}</span>
-      </div>
-    </div>`;
-  }).join('');
-
-  content.innerHTML = `
-    <div style="padding:24px 0;">
-      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:8px;">
-        <h2 style="font-size:18px;font-weight:700;color:var(--primary);">📈 Clientes por rango</h2>
-        <button class="refresh-btn" onclick="refreshData()">🔄 Actualizar datos</button>
-      </div>
-
-      <div class="stats-grid">
-        ${statsCards}
-        ${totalCard}
-      </div>
-
-      <div class="card tier-breakdown">
-        <h3 style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:16px;">📋 Desglose por rango</h3>
-        <table class="breakdown-table">
-          <thead><tr>
-            <th>Rango</th><th>Clientes</th><th></th><th style="text-align:right;">%</th><th style="text-align:right;">Facturación</th><th style="text-align:right;">Contratos</th>
-          </tr></thead>
-          <tbody>${breakdownRows}</tbody>
-        </table>
-      </div>
-
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px;">
-          <h3 style="font-size:15px;font-weight:700;color:var(--primary);">👥 Clientes <span style="font-weight:400;color:var(--g-500);">(${filteredClients.length})</span></h3>
-          <div class="filters">${filterHtml}</div>
-        </div>
-        <div class="client-list">
-          ${filteredClients.length > 0 ? clientRows : '<p style="text-align:center;padding:24px;color:var(--g-500);font-size:13px;">No hay clientes en esta categoría.</p>'}
-        </div>
-      </div>
-    </div>`;
-
-  loading.style.display = 'none';
-  content.style.display = 'block';
-
-  // Animaciones
-  document.querySelectorAll('.fade-in').forEach((el, i) => {
-    setTimeout(() => el.classList.add('visible'), 80 + i * 40);
   });
 }
 
-function setFilter(tier) {
-  currentFilter = tier;
-  renderAdminDashboard(allClients);
-}
-
-async function refreshData() {
-  document.getElementById('loading').style.display = 'block';
-  document.getElementById('content').style.display = 'none';
-  try {
-    const clients = await fetchAllClients();
-    renderAdminDashboard(clients);
-  } catch(e) {
-    console.error('Error refrescando datos', e);
-    renderAdminDashboard(allClients.length > 0 ? allClients : DEMO_CLIENTS);
+(function() {
+  var host = window.location.hostname;
+  var isLive = host === 'latinbien.com' || host === 'www.latinbien.com';
+  if (isLive) {
+    document.getElementById('demoContent').style.display = 'none';
+    document.getElementById('loginContent').style.display = 'block';
   }
-}
-
-// ===== MAIN =====
-async function init() {
-  const isLocal = window.location.protocol === 'file:';
-  const isExternal = window.location.hostname !== 'latinbien.com' && window.location.hostname !== 'www.latinbien.com';
-
-  // Modo demo: cuando es file:// O cuando NO estamos en latinbien.com
-  if (isLocal || isExternal) {
-    document.getElementById('adminName').textContent = 'Demo Admin';
-    renderAdminDashboard(DEMO_CLIENTS);
-    return;
-  }
-
-  try {
-    // Verificar sesión
-    const resp = await fetch('/web/session/get_session_info', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ jsonrpc: '2.0', method: 'call', params: {}, id: 'am_session_' + Date.now() })
-    });
-    const data = await resp.json();
-
-    if (data.result && data.result.uid) {
-      const s = data.result;
-      const isPublic = !s.username || s.username === '' || s.username === 'public' || s.share === true;
-
-      if (!isPublic) {
-        document.getElementById('adminName').textContent = s.name || s.username || 'Admin';
-        // Cargar datos reales
-        const clients = await fetchAllClients();
-        renderAdminDashboard(clients);
-        return;
-      }
-    }
-  } catch(e) {
-    console.log('No autenticado', e);
-  }
-
-  // No autenticado: mostrar aviso
-  document.getElementById('loading').style.display = 'none';
-  document.getElementById('content').innerHTML = `
-    <div class="access-denied">
-      <h2>🔒 Acceso restringido</h2>
-      <p>Debes iniciar sesión con una cuenta de administrador para acceder a este panel.</p>
-      <a href="/web/login?redirect=/admin-membresia.html" class="btn btn-primary btn-block">Iniciar Sesión</a>
-    </div>`;
-  document.getElementById('content').style.display = 'block';
-}
-
-init();
+})();
 </script>
 </body>
 </html>
