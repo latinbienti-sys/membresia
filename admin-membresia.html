@@ -460,8 +460,10 @@ async function refreshData() {
 // ===== MAIN =====
 async function init() {
   const isLocal = window.location.protocol === 'file:';
+  const isExternal = window.location.hostname !== 'latinbien.com' && window.location.hostname !== 'www.latinbien.com';
 
-  if (isLocal) {
+  // Modo demo: cuando es file:// O cuando NO estamos en latinbien.com
+  if (isLocal || isExternal) {
     document.getElementById('adminName').textContent = 'Demo Admin';
     renderAdminDashboard(DEMO_CLIENTS);
     return;

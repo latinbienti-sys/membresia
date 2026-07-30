@@ -485,9 +485,10 @@ const DEMO_DATA = {
 // ===== MAIN =====
 async function init() {
   const isLocal = window.location.protocol === 'file:';
+  const isExternal = window.location.hostname !== 'latinbien.com' && window.location.hostname !== 'www.latinbien.com';
 
-  if (isLocal) {
-    // Modo demo local
+  // Modo demo: cuando es file:// O cuando NO estamos en latinbien.com (GitHub Pages, etc.)
+  if (isLocal || isExternal) {
     document.getElementById('loading').style.display = 'none';
     const info = calcPointsAndTier(
       DEMO_DATA.contracts,
