@@ -56,6 +56,10 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(-
 .nav-links .nav-cta:hover{background:var(--accent-dark);transform:translateY(-1px)}.nav-links .nav-cta::after{display:none}
 .nav-links .nav-login{color:var(--primary)!important;font-weight:600;border:2px solid var(--primary);padding:7px 16px;border-radius:8px}
 .nav-links .nav-login:hover{background:var(--primary);color:#fff!important}.nav-links .nav-login::after{display:none}
+.nav-links .nav-membership{background:var(--accent);color:#fff!important;padding:9px 20px;border-radius:8px;font-weight:600}
+.nav-links .nav-membership:hover{background:var(--accent-dark);transform:translateY(-1px)}.nav-links .nav-membership::after{display:none}
+.nav-links .nav-admin{color:var(--g-500)!important;font-size:12px;padding:4px 12px;border:1px solid var(--g-300);border-radius:6px;font-weight:500}
+.nav-links .nav-admin:hover{border-color:var(--primary);color:var(--primary)!important}.nav-links .nav-admin::after{display:none}
 .menu-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
 .menu-toggle span{display:block;width:24px;height:2px;background:var(--dark);border-radius:2px;transition:var(--t)}
 .menu-toggle.active span:nth-child(1){transform:rotate(45deg)translate(5px,5px)}
@@ -380,15 +384,17 @@ const CONFIG = {
   },
 
   // ── Navbar menu items ──
-  // type: 'link' | 'cta' | 'login'
+  // type: 'link' | 'cta' | 'login' | 'membership' | 'admin'
   menu: [
     { label: 'Inicio', href: 'https://latinbien.com', type: 'link' },
     { label: 'Club Membresía', href: '#', type: 'link', active: true },
+    { label: 'Mi Membresía', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/mi-membresia', type: 'membership' },
     { label: 'Comercios Afiliados', href: '#comercios', type: 'link' },
     { label: 'Niveles', href: '#tarjetas', type: 'link' },
     { label: 'Beneficios', href: '#beneficios', type: 'link' },
+    { label: 'Admin', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/admin-membresia', type: 'admin' },
     { label: 'Registrarse', href: 'https://latinbien.com/web/signup', type: 'login' },
-    { label: 'Mi Cuenta', href: 'https://latinbien.com/my', type: 'login' },
+    { label: 'Mi Cuenta', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/web/login', type: 'login' },
   ],
 
   // ── Hero ──
@@ -530,7 +536,7 @@ const CONFIG = {
   ctaBanner: {
     title: '⭐ No esperes más, únete al Club Latinbien',
     description: 'Miles de personas ya disfrutan de beneficios exclusivos en comercios afiliados. Obtén tu línea de crédito y empieza a ahorrar hoy.',
-    btn: { label: '⭐ Ir a mi cuenta', href: 'https://latinbien.com/my' },
+    btn: { label: '👤 Ir a Mi Membresía', href: 'https://membresia-latinbien.latinbien-membresia.workers.dev/mi-membresia' },
   },
 
   // ── FAQ ──
@@ -640,8 +646,12 @@ function render() {
     <div class="login-prompt" id="loginPrompt">
       <h2>🔐 Únete al Club Latinbien</h2>
       <p>Inicia sesión para gestionar tu membresía, ver tus beneficios exclusivos y acceder a tu cuenta.</p>
-      <a href="https://latinbien.com/web/login?redirect=/my" class="btn-login">🔑 Iniciar Sesión</a>
+      <a href="https://membresia-latinbien.latinbien-membresia.workers.dev/web/login" class="btn-login">🔑 Iniciar Sesión</a>
       <p style="font-size:13px;opacity:.8;margin-top:16px;">¿No tienes cuenta? <a href="https://latinbien.com/web/signup" style="color:#fff;font-weight:700;text-decoration:underline;">Regístrate aquí</a></p>
+      <div style="margin-top:20px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://membresia-latinbien.latinbien-membresia.workers.dev/mi-membresia" class="btn-login" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;">👤 Mi Membresía</a>
+        <a href="https://membresia-latinbien.latinbien-membresia.workers.dev/admin-membresia" class="btn-login" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:#fff;">🛡️ Admin</a>
+      </div>
     </div>
     <!-- Saludo usuario (visible si logueado) -->
     <div class="user-greeting" id="userGreeting" style="display:none;">
@@ -871,9 +881,9 @@ function render() {
 
   // Navbar
   const menuItems = C.menu.map(m => {
-    const cls = m.type === 'cta' ? 'nav-cta' : m.type === 'login' ? 'nav-login' : '';
+    var cls = m.type === 'cta' ? 'nav-cta' : m.type === 'login' ? 'nav-login' : m.type === 'membership' ? 'nav-membership' : m.type === 'admin' ? 'nav-admin' : '';
     const active = m.active ? 'style="color:var(--primary);font-weight:600;"' : '';
-    const target = m.href.startsWith('#') ? '_self' : '_blank';
+    const target = '_self';
     return `<li><a href="${m.href}" target="${target}" class="${cls}" ${active}>${m.label}</a></li>`;
   }).join('');
   document.getElementById('navLinks').innerHTML = menuItems;
