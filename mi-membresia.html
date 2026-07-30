@@ -3,191 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Membresía - LatinBien</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="icon" href="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" type="image/png">
+<title>Mi Membresia - LatinBien</title>
 <style>
-:root{--primary:#213C83;--primary-dark:#1a2f66;--primary-ultra:#e8edf5;--accent:#F98B10;--accent-light:#fff3e0;--accent-dark:#e07d00;--gold:#D4A017;--silver:#8E9EAB;--bronze:#CD7F32;--success:#10b981;--danger:#ef4444;--dark:#1a1a2e;--g-100:#f8f9fa;--g-200:#e9ecef;--g-300:#dee2e6;--g-500:#adb5bd;--g-600:#6c757d;--g-700:#495057;--white:#fff;--shadow:0 4px 24px rgba(0,0,0,0.08);--shadow-lg:0 12px 48px rgba(0,0,0,0.12);--r:12px;--r-lg:20px;--t:all 0.3s cubic-bezier(0.4,0,0.2,1)}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;color:var(--dark);background:var(--g-100);line-height:1.6;-webkit-font-smoothing:antialiased}
-.container{max-width:960px;margin:0 auto;padding:0 20px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;text-decoration:none;border:none;cursor:pointer;font-family:inherit;transition:var(--t)}
-.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 8px 32px rgba(249,139,16,0.3)}
-.btn-block{width:100%;justify-content:center}
-.card{background:#fff;border-radius:var(--r-lg);padding:28px;box-shadow:var(--shadow);margin-bottom:20px;border:1px solid var(--g-200)}
-.text-center{text-align:center}
-.navbar{background:rgba(255,255,255,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--g-200);position:sticky;top:0;z-index:100}
-.navbar .container{display:flex;align-items:center;justify-content:space-between;height:64px}
-.navbar .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.navbar .logo img{height:34px;width:auto}
-.navbar .logo span{font-size:18px;font-weight:800;color:var(--primary);letter-spacing:-0.5px}
-.navbar .logo span .accent-c{color:var(--accent)}
-.navbar .right{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--g-600)}
-.hero{background:linear-gradient(135deg,var(--primary) 0%,#0f2250 100%);padding:48px 0 40px;text-align:center}
-.hero h1{font-size:clamp(24px,4vw,36px);font-weight:900;color:#fff;margin-bottom:8px}
-.hero p{font-size:15px;color:rgba(255,255,255,0.7);max-width:500px;margin:0 auto}
-.hero .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,139,16,0.15);color:var(--accent);padding:5px 16px;border-radius:100px;font-size:12px;font-weight:600;margin-bottom:16px;border:1px solid rgba(249,139,16,0.2)}
-.tier-card{background:#fff;border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:28px;border:1px solid var(--g-200)}
-.tier-head{padding:28px 28px 20px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px}
-.tier-head .th-left{display:flex;align-items:center;gap:14px}
-.tier-head .th-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px}
-.tier-head .th-icon.empty{background:var(--g-100)}.tier-head .th-icon.basica{background:var(--accent-light)}.tier-head .th-icon.media{background:#e9ecef}.tier-head .th-icon.vip{background:var(--primary-ultra)}
-.tier-head .th-info h2{font-size:22px;font-weight:800;color:var(--primary);margin-bottom:2px}
-.tier-head .th-info span{font-size:13px;color:var(--g-500)}
-.tier-head .th-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 18px;border-radius:100px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-.th-badge-empty{background:var(--g-100);color:var(--g-500)}.th-badge-basica{background:var(--accent-light);color:var(--bronze)}.th-badge-media{background:#e9ecef;color:#4a5568}.th-badge-vip{background:var(--primary-ultra);color:var(--primary)}
-.tier-body{padding:0 28px 28px}
-.tier-points{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:24px}
-.tier-point{background:var(--g-100);border-radius:var(--r);padding:18px;text-align:center}
-.tier-point .tp-val{font-size:26px;font-weight:800;color:var(--primary);font-variant-numeric:tabular-nums}
-.tier-point .tp-lbl{font-size:12px;color:var(--g-500);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
-.tier-point .tp-sub{font-size:11px;color:var(--g-400);margin-top:2px}
-.tier-point.highlight .tp-val{color:var(--accent)}
-.progress-section{margin-top:20px}
-.progress-section h4{font-size:14px;font-weight:700;color:var(--primary);margin-bottom:12px;display:flex;justify-content:space-between}
-.progress-bar{background:var(--g-200);border-radius:100px;height:10px;overflow:hidden;margin-bottom:6px}
-.progress-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--accent),var(--gold));transition:width .8s ease}
-.progress-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--g-500)}
-.progress-next{font-size:13px;color:var(--g-600);margin-top:8px;padding:12px;background:var(--g-100);border-radius:var(--r)}
-.next-level{background:linear-gradient(135deg,var(--primary-ultra),#fff);border-radius:var(--r-lg);padding:24px;margin-top:20px;border:1px solid var(--g-200)}
-.next-level h4{font-size:15px;font-weight:700;color:var(--primary);margin-bottom:8px}
-.next-level p{font-size:13px;color:var(--g-600);line-height:1.6}
-.next-level .steps{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.next-level .steps .step{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--g-600);background:#fff;padding:6px 14px;border-radius:100px;border:1px solid var(--g-200)}
-.status-bar{display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:var(--r);font-size:13px;font-weight:500;margin-top:16px}
-.status-bar .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.status-ok{background:var(--g-100);color:var(--g-700)}.status-ok .dot{background:var(--success)}
-.contracts-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
-.contracts-table th{padding:10px 12px;background:var(--g-100);color:var(--g-600);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.5px;text-align:left;border-bottom:2px solid var(--g-200)}
-.contracts-table td{padding:10px 12px;border-bottom:1px solid var(--g-100);color:var(--g-700)}
-.contracts-table tr:hover td{background:var(--g-100)}
-.badge-status{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;text-transform:uppercase}
-.badge-entregado{background:#e8f5e9;color:#2e7d32}.badge-aprobado{background:#fff3e0;color:#e65100}
-.footer{text-align:center;padding:32px 0;font-size:12px;color:var(--g-500);border-top:1px solid var(--g-200);margin-top:40px}
-.live-only{display:none}
-@media(max-width:600px){.tier-head{flex-direction:column}.tier-points{grid-template-columns:1fr 1fr}}
+body{font-family:Arial,sans-serif;margin:0;padding:20px;background:#f5f5f5;color:#333}
+.container{max-width:800px;margin:0 auto}
+.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(0,0,0,0.1)}
+h1{color:#213C83;font-size:24px}
+.badge{display:inline-block;background:#fff3e0;color:#CD7F32;padding:4px 14px;border-radius:100px;font-size:12px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:16px 0}
+.box{background:#f8f9fa;border-radius:8px;padding:16px;text-align:center}
+.val{font-size:26px;font-weight:800;color:#213C83}
+.lbl{font-size:11px;color:#999;text-transform:uppercase}
+.bar{background:#e9ecef;border-radius:100px;height:10px;overflow:hidden;margin:8px 0}
+.fill{height:100%;border-radius:100px;background:linear-gradient(90deg,#F98B10,#D4A017);width:75%}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:12px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #eee}
+th{background:#f8f9fa;font-size:11px;text-transform:uppercase;color:#666}
+.tag{display:inline-block;padding:2px 10px;border-radius:100px;font-size:10px;font-weight:600;background:#e8f5e9;color:#2e7d32}
+.step{display:inline-block;background:#fff;border:1px solid #ddd;border-radius:100px;padding:4px 12px;font-size:11px;margin:4px;color:#666}
+.hint{background:#e8edf5;border-radius:8px;padding:16px;margin-top:16px;font-size:13px;color:#213C83}
+.footer{text-align:center;font-size:12px;color:#999;padding:24px 0}
 </style>
 </head>
 <body>
+<div class="container">
 
-<nav class="navbar">
-  <div class="container">
-    <a href="https://latinbien.com" class="logo">
-      <img src="https://latinbien.com/web/image/website/1/logo/LATINBIEN?unique=4695b15" alt="LATINBIEN"
-           onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 50%22><text y=%2235%22 font-size=%2220%22 font-weight=%22bold%22 fill=%22%23213C83%22>LATINBIEN</text></svg>'">
-      <span>Latin<span class="accent-c">Bien</span></span>
-    </a>
-    <div class="right">
-      <a href="/club-membresia.html" style="color:var(--g-600);text-decoration:none;">Conoce el Club</a>
-      <a href="/my" style="color:var(--g-600);text-decoration:none;">Mi Cuenta</a>
+<h1>Mi Membresia</h1>
+
+<div class="card">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div style="width:48px;height:48px;border-radius:12px;background:#fff3e0;display:flex;align-items:center;justify-content:center;font-size:28px;">&#x1F949;</div>
+      <div>
+        <h2 style="margin:0;font-size:20px;color:#213C83;">Membresia Basica</h2>
+        <span style="font-size:12px;color:#999;">30 puntos acumulados</span>
+      </div>
     </div>
+    <span class="badge">&#x1F949; Basica</span>
   </div>
-</nav>
 
-<div class="hero">
-  <div class="container">
-    <div class="badge"> Mi Membresia</div>
-    <h1>Tu rango y beneficios</h1>
-    <p>Revisa tu nivel actual, puntos acumulados y lo que necesitas para subir al siguiente rango.</p>
+  <div class="grid">
+    <div class="box"><div class="val">30</div><div class="lbl">Puntos totales</div></div>
+    <div class="box"><div class="val">1</div><div class="lbl">Contratos activos</div></div>
+    <div class="box"><div class="val">$1,595</div><div class="lbl">Facturado total</div></div>
+    <div class="box"><div class="val" style="color:#10b981;">&#x2713;</div><div class="lbl">Al dia</div></div>
+  </div>
+
+  <div>
+    <div style="display:flex;justify-content:space-between;font-size:13px;font-weight:600;"><span>Progreso a &#x1F948; Media</span><span>30/40 pts</span></div>
+    <div class="bar"><div class="fill"></div></div>
+    <div class="hint">
+      <strong>&#x1F3AF; Como llegar a Media?</strong><br>
+      Te faltan <strong>10 puntos</strong>. Acumula puntos asi:<br>
+      <span class="step">&#x1F4C4; 10 pts por contrato activo</span>
+      <span class="step">&#x1F4B0; 5 pts por cada $1,000</span>
+      <span class="step">&#x2705; 15 pts por estar al dia</span>
+    </div>
   </div>
 </div>
 
-<div class="container" style="padding:24px 0;">
-
-  <!-- Demo content (visible en GitHub Pages o file://) -->
-  <div id="demoContent">
-
-    <div class="tier-card">
-      <div class="tier-head">
-        <div class="th-left">
-          <div class="th-icon basica">&#x1F949;</div>
-          <div class="th-info">
-            <h2>Membresia Basica</h2>
-            <span>30 puntos acumulados</span>
-          </div>
-        </div>
-        <span class="th-badge th-badge-basica">&#x1F949; Basica</span>
-      </div>
-      <div class="tier-body">
-        <div class="tier-points">
-          <div class="tier-point highlight"><div class="tp-val">30</div><div class="tp-lbl">Puntos totales</div></div>
-          <div class="tier-point"><div class="tp-val">1</div><div class="tp-lbl">Contratos activos</div><div class="tp-sub">10 pts c/u</div></div>
-          <div class="tier-point"><div class="tp-val">$1,595</div><div class="tp-lbl">Facturado total</div><div class="tp-sub">5 pts / $1,000</div></div>
-          <div class="tier-point"><div class="tp-val">&#x2713;</div><div class="tp-lbl">Al dia</div><div class="tp-sub">+15 pts bono</div></div>
-        </div>
-
-        <div class="progress-section">
-          <h4><span>Progreso a <strong>&#x1F948; Media</strong></span> <span>30/40 pts</span></h4>
-          <div class="progress-bar"><div class="progress-fill" style="width:75%"></div></div>
-          <div class="progress-labels"><span>Actual: Basica</span><span style="font-weight:700;">75%</span><span>Siguiente: Media</span></div>
-          <div class="next-level">
-            <h4>&#x1F3AF; Como llegar a Media?</h4>
-            <p>Necesitas <strong>10 puntos mas</strong>. Acumula puntos asi:</p>
-            <div class="steps">
-              <span class="step">&#x1F4C4; 10 pts por contrato activo</span>
-              <span class="step">&#x1F4B0; 5 pts por cada $1,000 facturados</span>
-              <span class="step">&#x2705; 15 pts por estar al dia</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:12px;">&#x1F4CA; Resumen</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;">
-        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--primary);">1</div><div style="font-size:11px;color:var(--g-500);">Activos</div></div>
-        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--g-600);">0</div><div style="font-size:11px;color:var(--g-500);">Cancelados</div></div>
-        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--primary);">$1,595</div><div style="font-size:11px;color:var(--g-500);">Facturado</div></div>
-        <div style="text-align:center;padding:12px;background:var(--g-100);border-radius:var(--r);"><div style="font-size:20px;font-weight:800;color:var(--success);">&#x2713;</div><div style="font-size:11px;color:var(--g-500);">Al dia</div></div>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:16px;">&#x1F4CB; Mis contratos activos (1)</h3>
-      <div style="overflow-x:auto;">
-        <table class="contracts-table">
-          <thead><tr><th>Contrato</th><th>Fecha</th><th>Estado</th><th style="text-align:right;">Total</th><th style="text-align:right;">Saldo</th></tr></thead>
-          <tbody>
-            <tr><td><strong>FACTU/2024/03/0001-1338</strong></td><td>15 mar. 2024</td><td><span class="badge-status badge-entregado">Entregado</span></td><td style="text-align:right;">$1,595.33</td><td style="text-align:right;">$1,089.51</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
+<div class="card">
+  <h3 style="margin:0 0 12px;font-size:16px;color:#213C83;">Resumen</h3>
+  <div class="grid">
+    <div class="box"><div class="val">1</div><div class="lbl">Activos</div></div>
+    <div class="box"><div class="val" style="color:#999;">0</div><div class="lbl">Cancelados</div></div>
+    <div class="box"><div class="val">$1,595</div><div class="lbl">Facturado</div></div>
+    <div class="box"><div class="val" style="color:#10b981;">&#x2713;</div><div class="lbl">Al dia</div></div>
   </div>
+</div>
 
-  <!-- Login prompt (visible solo en latinbien.com si no hay sesion) -->
-  <div id="loginContent" style="display:none;">
-    <div class="card text-center" style="padding:48px 24px;max-width:480px;margin:40px auto;">
-      <h2 style="font-size:24px;font-weight:800;color:var(--primary);margin-bottom:10px;">&#x1F510; Inicia sesion</h2>
-      <p style="font-size:14px;color:var(--g-600);margin-bottom:20px;">Accede con tu cuenta de LatinBien para ver el estado de tu membresia.</p>
-      <a href="/web/login?redirect=/mi-membresia.html" class="btn btn-primary btn-block">Iniciar Sesion</a>
-    </div>
-  </div>
-
+<div class="card">
+  <h3 style="margin:0 0 12px;font-size:16px;color:#213C83;">Mis contratos activos (1)</h3>
+  <table>
+    <thead><tr><th>Contrato</th><th>Fecha</th><th>Estado</th><th>Total</th><th>Saldo</th></tr></thead>
+    <tbody>
+      <tr><td><strong>FACTU/2024/03/0001-1338</strong></td><td>15 mar. 2024</td><td><span class="tag">Entregado</span></td><td>$1,595.33</td><td>$1,089.51</td></tr>
+    </tbody>
+  </table>
 </div>
 
 <div class="footer">
-  <div class="container">
-    <p>&copy; 2026 LatinBien. Todos los derechos reservados.</p>
-  </div>
+  <p>&copy; 2026 LatinBien - <span style="color:#213C83;">YARLEY CAROLINA CARMONA HIDALGO</span></p>
 </div>
 
+</div>
 <script>
 (function() {
-  // Solo en latinbien.com: ocultar demo y mostrar login o datos reales
   var host = window.location.hostname;
-  var isLive = host === 'latinbien.com' || host === 'www.latinbien.com';
-
-  if (isLive) {
-    document.getElementById('demoContent').style.display = 'none';
-    document.getElementById('loginContent').style.display = 'block';
-    // Aqui iria la logica para detectar sesion y mostrar datos reales
+  if (host === 'latinbien.com' || host === 'www.latinbien.com') {
+    document.body.innerHTML = '<div class="container"><div class="card" style="text-align:center;padding:60px;"><h2>Inicia sesion</h2><p style="color:#666;">Accede con tu cuenta de LatinBien.</p><a href="/web/login?redirect=/mi-membresia.html" style="display:inline-block;background:#F98B10;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:12px;">Iniciar Sesion</a></div></div>';
   }
-  // En GitHub Pages o file://: se queda el contenido demo visible
 })();
 </script>
 </body>
